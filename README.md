@@ -18,4 +18,20 @@ Descripción del proyecto: en este proyecto vamos a crear una interfaz en la cua
                           intervalos y el error permitido, obteniendo ahí mismo los resultados.
 
 Estructura del repositorio:
+PROYECTO_METODOS/
+-main.py              
+-metodos.py           
+-interfaz_grafica.py  
+-requisitos.txt       
+-documentos/
 
+Enlaces rápidos a entregables:
+INTERFAZ-METODOS-NUMERICOS/
+  -assets/                 
+  -docs/                   
+  -src/                   
+    -main.py             
+    -gui/                
+    -ogic/             
+  -requirements.txt        
+  -README.md              
