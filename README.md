@@ -19,8 +19,8 @@ Descripción del proyecto: en este proyecto vamos a crear una interfaz en la cua
 
 Estructura del repositorio:
 PROYECTO_METODOS/
-├── main.py              
-├── metodos.py           
-├── interfaz_grafica.py  
-├── requisitos.txt       
-└── documentos/
+-main.py              
+-metodos.py           
+-interfaz_grafica.py  
+-requisitos.txt       
+-documentos/
