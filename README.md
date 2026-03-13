@@ -24,3 +24,14 @@ PROYECTO_METODOS/
 -interfaz_grafica.py  
 -requisitos.txt       
 -documentos/
+
+Enlaces rápidos a entregables:
+INTERFAZ-METODOS-NUMERICOS/
+  -assets/                 
+  -docs/                   
+  -src/                   
+    -main.py             
+    -gui/                
+    -ogic/             
+  -requirements.txt        
+  -README.md              
