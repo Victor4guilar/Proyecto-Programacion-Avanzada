@@ -1,6 +1,6 @@
 # CHANGELOG
 
-## [v1.0.0] - 17-04-2026 - Jonathan Sánchez Pérez - Perez-png2
+## v1.0.0 - 17-04-2026 - Jonathan Sánchez Pérez - Perez-png2
 
 ### Agregado
 - Interfaz gráfica básica desarrollada con Tkinter
