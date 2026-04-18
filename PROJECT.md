@@ -120,20 +120,22 @@ Resultados y Gráficas
 
 ## Cronograma del Proyecto
 
+## Cronograma del Proyecto
+
 | Semana   | Actividad                                                   | Fecha importante |
 |----------|-------------------------------------------------------------|------------------|
-| Semana 1 | Planeación del proyecto, definición de objetivos y creación del repositorio | |
-| Semana 2 | Organización del repositorio y estructura del proyecto | |
-| Semana 3 | Diseño inicial de la interfaz y planteamiento de los algoritmos | |
-| Semana 4 | Implementación del primer método numérico (Bisección) | |
-| Semana 5 | Integración del método en la interfaz | **17 de abril — Primera entrega de avances** |
-| Semana 6 | Implementación del método de Falsa Posición | |
-| Semana 7 | Pruebas y corrección de errores en los métodos implementados | |
-| Semana 8 | Mejora de la interfaz gráfica y funcionalidad del programa | **15 de mayo — Segunda entrega de avances** |
-| Semana 9 | Implementación de gráficas de resultados y error | |
-| Semana 10 | Integración completa del sistema | |
-| Semana 11 | Pruebas generales del programa | |
-| Semana 12 | Corrección de errores y optimización del código | |
-| Semana 13 | Preparación de documentación y ajustes finales | |
-| Semana 14 | Revisión final del proyecto | |
-| Semana 15 | Entrega final del proyecto | **31 de julio — Entrega final** |
+| Semana 1 | Planeación del proyecto y definición de objetivos          | |
+| Semana 2 | Organización del repositorio y arquitectura del sistema    | |
+| Semana 3 | Diseño inicial de la interfaz gráfica                      | |
+| Semana 4 | Implementación del primer método numérico (Bisección)      | |
+| Semana 5 | Integración del método en la interfaz (Primer avance funcional) | **17 de abril — Primera entrega de avances** |
+| Semana 6 | Implementación de métodos para ecuaciones algebraicas (Bisección, Falsa Posición, Newton-Raphson, Secante, Punto Fijo, entre otros) | |
+| Semana 7 | Integración de múltiples métodos en la interfaz            | |
+| Semana 8 | Implementación de métodos de interpolación y aproximación (Newton, Lagrange, entre otros) | **15 de mayo — Segunda entrega de avances** |
+| Semana 9 | Implementación de métodos de ajuste de curvas (Mínimos Cuadrados, entre otros más) | |
+| Semana 10 | Desarrollo de visualización de resultados y gráficas       | |
+| Semana 11 | Pruebas generales del sistema                             | |
+| Semana 12 | Corrección de errores y optimización                      | |
+| Semana 13 | Documentación final del proyecto                          | |
+| Semana 14 | Preparación de presentación                               | |
+| Semana 15 | Entrega final del proyecto                                | **31 de julio — Entrega final** |
