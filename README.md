@@ -17,6 +17,14 @@ Descripción del proyecto: en este proyecto vamos a crear una interfaz en la cua
                           la cual ya se podrá utilizar el método, ingresando la fución, los 
                           intervalos y el error permitido, obteniendo ahí mismo los resultados.
 
+Estado del Proyecto: 
+Versión actual: `v1. 0. 0`
+Avances técnicos:
+  -Estructura de la Interfaz: Se ha llevado a cabo la creación de una ventana principal que se encuentra segmentada en paneles para la          configuración y zonas de trabajo interactivas. 
+  -Análisis de Funciones: Se ha posibilitado la interpretación de expresiones matemáticas elaboradas (como seno, coseno, logaritmo, entre       otros) a partir de la información proporcionada por el usuario. 
+  -Métodos Incorporados: * Bisección: Se ha desarrollado un algoritmo operativo que incluye la validación del cambio de signo dentro del       intervalo establecido. 
+  -Gráficas: Se realiza la generación automática de gráficos de convergencia (Error en función de Iteraciones) utilizando la biblioteca         Matplotlib.
+
 Estructura del repositorio:
 PROYECTO_METODOS/
 -main.py              
