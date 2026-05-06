@@ -19,3 +19,22 @@
 - Validación de convergencia del método
 
 ---
+
+## v1.1.0 - 05-05-2026 - Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Agregado
+- Implementación del Método de Falsa Posición
+- Integración del método en la interfaz gráfica existente
+- Selección dinámica entre métodos (Bisección y Falsa Posición)
+
+### Mejoras
+- Reutilización de los mismos campos de entrada para múltiples métodos
+- Mejora en la estructura del código para soportar nuevos métodos
+- Visualización del método seleccionado en los resultados
+
+### Pruebas
+- Pruebas manuales con funciones exponenciales y polinomiales
+- Validación de convergencia del método de Falsa Posición
+- Comparación básica entre Bisección y Falsa Posición
+
+---
