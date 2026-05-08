@@ -63,3 +63,32 @@
 - Verificación de funcionamiento correcto de las derivadas ingresadas por el usuario
 
 ---
+
+## v1.3.0 - 07-05-2026 - Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+### Agregado
+- Implementación del Método de la Secante
+- Integración del método de la Secante en la interfaz gráfica
+- Inclusión de dos puntos iniciales \(x_0\) y \(x_1\) para métodos abiertos
+- Cálculo iterativo de raíces mediante aproximaciones secantes sucesivas
+- Límite máximo de iteraciones para evitar ciclos infinitos
+- Validación para evitar divisiones entre cero en el método de la Secante
+- Visualización gráfica de la convergencia del error para el método de la Secante
+
+### Mejoras
+- Reestructuración de la interfaz para soportar métodos cerrados y abiertos de forma más organizada
+- Optimización del sistema dinámico de carga de entradas según el método seleccionado
+- Mejora en el manejo de excepciones mostrando detalles específicos del error
+- Actualización de la ventana principal y dimensiones de la interfaz
+- Mejora en la presentación de resultados incluyendo raíz estimada, error final e iteraciones
+- Optimización de la función de evaluación matemática reutilizable entre métodos
+- Mejora visual en las gráficas de convergencia agregando cuadrícula y marcadores
+
+### Pruebas
+- Pruebas manuales con funciones polinomiales, exponenciales y logarítmicas
+- Validación de convergencia del método de la Secante
+- Comparación básica de rapidez de convergencia entre Newton-Raphson y Secante
+- Verificación de estabilidad ante posibles divisiones entre cero
+- Pruebas de funcionamiento dinámico de la interfaz para los cuatro métodos implementados
+
+---
