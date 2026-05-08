@@ -38,3 +38,28 @@
 - Comparación básica entre Bisección y Falsa Posición
 
 ---
+
+## v1.2.0 - 06-05-2026 - Víctor Aguilar Ortiz - Victor4guilar
+
+### Agregado
+- Implementación del Método de Newton-Raphson
+- Entrada dinámica para la derivada de la función \(f'(x)\)
+- Integración del método de Newton-Raphson en la interfaz gráfica
+- Soporte para métodos abiertos dentro de la misma estructura del programa
+- Cálculo iterativo de raíces mediante aproximaciones sucesivas
+- Visualización gráfica del error vs iteraciones para Newton-Raphson
+
+### Mejoras
+- Adaptación dinámica de los campos de entrada según el método seleccionado
+- Reutilización de la lógica de evaluación de funciones para derivadas
+- Mejora en la escalabilidad del programa para agregar nuevos métodos numéricos
+- Optimización de la estructura condicional en la carga y ejecución de métodos
+- Mejor organización del manejo de resultados y validaciones
+
+### Pruebas
+- Pruebas manuales con funciones polinomiales y trascendentales
+- Validación de convergencia del método de Newton-Raphson
+- Comparación básica de velocidad de convergencia entre métodos cerrados y abiertos
+- Verificación de funcionamiento correcto de las derivadas ingresadas por el usuario
+
+---
