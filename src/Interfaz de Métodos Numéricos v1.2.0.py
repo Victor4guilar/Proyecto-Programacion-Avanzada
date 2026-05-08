@@ -7,7 +7,7 @@ import math                              # Librería de funciones matemáticas
 
 # ------------------ CLASE PRINCIPAL ------------------
 class MetodosNumericosApp:
-    VERSION = "v1.1.0"  # Versión del programa (solo informativo)
+    VERSION = "v1.2.0"  # Versión del programa (solo informativo)
 
     # Constructor: se ejecuta al iniciar el programa
     def __init__(self, root):
