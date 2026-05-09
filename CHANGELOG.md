@@ -92,3 +92,33 @@
 - Pruebas de funcionamiento dinámico de la interfaz para los cuatro métodos implementados
 
 ---
+
+## v1.4.0 - 08-05-2026 - Jonathan Sánchez Pérez - Perez-png2
+
+### Agregado
+- Implementación del Método de Punto Fijo
+- Integración del método de Punto Fijo en la interfaz gráfica principal
+- Inclusión de entrada dinámica para valor inicial \(x_0\)
+- Cálculo iterativo mediante funciones de iteración \(g(x)\)
+- Visualización gráfica de la convergencia del error para el método de Punto Fijo
+- Inclusión del método en el selector dinámico de métodos numéricos
+- Control de iteraciones máximas para evitar ciclos infinitos
+
+### Mejoras
+- Optimización de la estructura de carga dinámica de entradas según el método seleccionado
+- Reutilización completa del sistema de evaluación matemática para funciones iterativas
+- Mejora en la estabilidad de cálculo evitando errores por división entre cero
+- Consolidación de la arquitectura modular para soportar más métodos abiertos
+- Mejora en la interfaz gráfica manteniendo compatibilidad entre todos los métodos implementados
+- Optimización del flujo de ejecución y visualización de resultados
+- Actualización del sistema de estado dinámico de la aplicación
+
+### Pruebas
+- Pruebas manuales con funciones iterativas algebraicas y trascendentales
+- Validación de convergencia del método de Punto Fijo
+- Comparación básica de convergencia entre Punto Fijo, Newton-Raphson y Secante
+- Verificación de estabilidad numérica en distintas tolerancias
+- Pruebas dinámicas de funcionamiento conjunto de los cinco métodos implementados
+
+---
+
