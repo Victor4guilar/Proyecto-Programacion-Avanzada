@@ -122,3 +122,35 @@
 
 ---
 
+## v1.5.0 - 09-05-2026 - Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Agregado
+- Implementación del Método de Búsqueda por Incrementos
+- Integración del método de Búsqueda por Incrementos en la interfaz gráfica
+- Detección automática de intervalos con cambio de signo
+- Inclusión de parámetros dinámicos para intervalo inicial, intervalo final e incremento
+- Visualización de posibles raíces mediante intervalos detectados
+- Gráfica de la función evaluada durante la búsqueda por incrementos
+- Clasificación visual de métodos en "Raíces Cerradas" y "Raíces Abiertas" dentro del selector de métodos
+- Sistema de validación para impedir la selección de encabezados de categorías en el ComboBox
+
+### Mejoras
+- Reestructuración visual del menú de selección de métodos para una navegación más intuitiva
+- Mejora en la organización de métodos numéricos según su clasificación teórica
+- Adaptación dinámica de entradas dependiendo del método seleccionado
+- Optimización del controlador de eventos del ComboBox mediante validación automática
+- Mejora en la presentación de resultados para métodos de detección de intervalos
+- Separación más clara entre métodos iterativos y métodos de búsqueda de raíces por intervalo
+- Optimización del flujo gráfico para soportar distintos tipos de visualización matemática
+
+### Pruebas
+- Pruebas manuales con funciones trigonométricas, polinomiales y exponenciales
+- Validación de detección correcta de cambios de signo en distintos intervalos
+- Verificación de estabilidad del incremento en búsquedas amplias y pequeñas
+- Comparación visual entre intervalos detectados y raíces reales de funciones
+- Pruebas de funcionamiento dinámico del selector categorizado de métodos
+- Verificación del bloqueo correcto de selección en encabezados del ComboBox
+- Pruebas integrales de compatibilidad entre los seis métodos implementados
+
+---
+
