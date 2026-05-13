@@ -154,3 +154,35 @@
 
 ---
 
+## v1.6.0 - 13-05-2026 - Víctor Aguilar Ortiz - Victor4guilar
+
+### Agregado
+- Implementación del Método de Mínimos Cuadrados Lineales
+- Integración del método de ajuste de curvas en la interfaz gráfica principal
+- Inclusión de una nueva categoría visual llamada "Ajuste de Curvas" dentro del selector de métodos
+- Entrada dinámica de arreglos de datos \(X\) y \(Y\) separados por comas
+- Cálculo automático de la pendiente \(a\) e intercepto \(b\) de la recta ajustada
+- Generación de la función ajustada en la forma \(y = ax + b\)
+- Visualización gráfica de la recta de ajuste obtenida mediante mínimos cuadrados
+- Validación de igualdad de tamaño entre los arreglos de datos ingresados
+
+### Mejoras
+- Adaptación de la interfaz para soportar métodos de ajuste de datos además de métodos de búsqueda de raíces
+- Optimización de la carga dinámica de entradas dependiendo del tipo de método seleccionado
+- Reutilización de la estructura gráfica existente para mostrar resultados de regresión lineal
+- Mejora en la organización del selector de métodos agregando separación temática entre categorías
+- Optimización del sistema de resultados para mostrar parámetros matemáticos del ajuste lineal
+- Consolidación de la arquitectura modular permitiendo integrar futuros métodos estadísticos y de interpolación
+- Mejora en la compatibilidad entre visualización gráfica y métodos no iterativos
+
+### Pruebas
+- Pruebas manuales con conjuntos de datos lineales y semi-lineales
+- Validación del cálculo correcto de pendiente e intercepto
+- Verificación gráfica de la recta ajustada respecto a los datos ingresados
+- Comparación básica de resultados con cálculos manuales de regresión lineal
+- Pruebas de manejo de errores en arreglos de distinto tamaño
+- Verificación del correcto funcionamiento dinámico de la interfaz para métodos de ajuste de curvas
+- Pruebas integrales de compatibilidad entre los siete métodos implementados
+
+---
+
