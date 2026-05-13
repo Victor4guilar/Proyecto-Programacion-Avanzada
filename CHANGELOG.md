@@ -154,7 +154,7 @@
 
 ---
 
-## v1.6.0 - 13-05-2026 - Víctor Aguilar Ortiz - Victor4guilar
+## v1.6.0 - 12-05-2026 - Víctor Aguilar Ortiz - Victor4guilar
 
 ### Agregado
 - Implementación del Método de Mínimos Cuadrados Lineales
