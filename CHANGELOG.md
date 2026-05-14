@@ -186,3 +186,38 @@
 
 ---
 
+## v1.7.0 - 13-05-2026 - Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+### Agregado
+- Implementación del Método de Interpolación Lineal de Newton
+- Integración del método de interpolación dentro de la categoría "Ajuste de Curvas"
+- Inclusión de entradas dinámicas para los puntos \((x_0, y_0)\) y \((x_1, y_1)\)
+- Entrada para el valor \(x\) a interpolar
+- Cálculo automático de los coeficientes de interpolación lineal de Newton
+- Obtención del valor interpolado mediante la fórmula de Newton de primer grado
+- Visualización gráfica de los puntos conocidos y del punto interpolado
+- Inclusión del coeficiente \(b_1\) (pendiente) dentro de los resultados mostrados
+- Compatibilidad completa del método con la arquitectura modular existente
+
+### Mejoras
+- Reestructuración de la interfaz para soportar métodos de interpolación además de ajuste de curvas y búsqueda de raíces
+- Optimización de la carga dinámica de entradas específicas para métodos de interpolación
+- Separación lógica del flujo de ejecución para métodos no iterativos
+- Mejora en la presentación gráfica diferenciando puntos conocidos y valores interpolados
+- Optimización del sistema de resultados para mostrar parámetros matemáticos relevantes del proceso de interpolación
+- Consolidación de la categoría "Ajuste de Curvas" incorporando métodos de regresión e interpolación
+- Mejora en la organización interna del controlador de ejecución para soportar distintos tipos de métodos numéricos
+- Adaptación del sistema de validación para excluir métodos de interpolación del uso de tolerancias iterativas
+
+### Pruebas
+- Pruebas manuales con conjuntos de datos lineales simples
+- Verificación del cálculo correcto del coeficiente \(b_1\)
+- Validación del valor interpolado comparándolo con cálculos manuales
+- Pruebas gráficas del comportamiento de la recta interpolada
+- Verificación de funcionamiento correcto de entradas dinámicas para interpolación
+- Pruebas de estabilidad en distintos intervalos de interpolación
+- Validación de compatibilidad entre métodos iterativos, ajuste de curvas e interpolación
+- Pruebas integrales de funcionamiento conjunto de los ocho métodos implementados
+
+---
+
