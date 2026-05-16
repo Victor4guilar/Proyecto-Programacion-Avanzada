@@ -21,13 +21,13 @@ Avances técnicos:
     -Estructura de la Interfaz: Se ha llevado a cabo la creación de una ventana principal segmentada en paneles de configuración lateral y zonas de trabajo interactivas con actualización de campos de entrada en tiempo real según el método seleccionado.
 
     -Análisis de Funciones y Datos: Se ha posibilitado la interpretación de expresiones matemáticas elaboradas (como seno, coseno, logaritmo, exponencial, entre otros) a partir de texto, así como el procesamiento secuencial de arreglos numéricos discretos separados por comas.
-
+   
     -Métodos Incorporados:
 
       --Raíces Cerradas: Bisección (con validación de cambio de signo), Falsa Posición y Búsqueda por Incrementos.
-
+      
       --Raíces Abiertas: Newton-Raphson (con entrada para derivada), Secante y Punto Fijo.
 
-      --Ajuste de Curvas: Mínimos Cuadrados Lineales e Interpolación Lineal de Newton (con cálculo de diferencias divididas).
+      --Ajuste de Curvas: Mínimos Cuadrados Lineales, Mínimos Cuadrados Polinomiales e Interpolación Lineal de Newton (con cálculo de diferencias divididas).
 
-      --Gráficas: Se realiza la generación automática de gráficos interactivos utilizando la biblioteca Matplotlib, mostrando curvas de caída del error iterativo, comportamiento de funciones o el trazado de rectas de ajuste lineal junto a sus puntos muestreados e interpolados.
+      --Gráficas: Se realiza la generación automática de gráficos interactivos utilizando la biblioteca Matplotlib, mostrando curvas de caída del error iterativo, comportamiento de funciones o el trazado de rectas y curvas de ajuste polinomial junto a sus puntos muestreados e interpolados.
