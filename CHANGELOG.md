@@ -259,3 +259,48 @@
 
 ---
 
+## v1.9.0 - 16-05-2026 - Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Agregado
+- Implementación del Método de Polinomios de Interpolación de Newton
+- Integración del método dentro de la categoría "Ajuste de Curvas"
+- Inclusión de soporte para interpolación polinomial de orden arbitrario mediante diferencias divididas
+- Entrada dinámica de arreglos de datos \(X\) y \(Y\) separados por comas
+- Inclusión de entrada para el valor \(x\) a interpolar
+- Construcción automática de la tabla de diferencias divididas
+- Obtención automática de coeficientes \(b_0, b_1, b_2, ...\) del polinomio de Newton
+- Evaluación automática del polinomio interpolante en cualquier punto ingresado
+- Visualización de la tabla completa de diferencias divididas dentro de los resultados
+- Representación gráfica de la curva interpolada generada mediante el polinomio de Newton
+- Visualización del punto interpolado sobre la gráfica
+- Uso de NumPy para generación de curvas suavizadas en la representación gráfica
+- Compatibilidad del método con interpolaciones de orden superior utilizando múltiples puntos
+
+### Mejoras
+- Reestructuración de la arquitectura de interpolación para soportar métodos polinomiales avanzados
+- Optimización del sistema dinámico de entradas para métodos basados en tablas de datos
+- Consolidación de la categoría "Ajuste de Curvas" incorporando interpolación lineal y polinomial de Newton
+- Mejora en la visualización matemática mostrando coeficientes y tabla de diferencias divididas
+- Adaptación del flujo de ejecución para soportar métodos de interpolación no iterativos de orden superior
+- Optimización del sistema gráfico para representar curvas interpoladas suaves utilizando múltiples evaluaciones
+- Mejora en la organización interna de métodos de interpolación separando interpolación lineal y polinomial
+- Reutilización de estructuras gráficas y de visualización existentes para mantener compatibilidad entre métodos
+- Optimización del manejo dinámico de resultados para métodos basados en tablas matemáticas
+- Consolidación de la arquitectura modular permitiendo futuras expansiones de métodos de interpolación
+
+### Pruebas
+- Pruebas manuales con interpolaciones polinomiales de tercer y quinto orden
+- Verificación del cálculo correcto de diferencias divididas
+- Validación de coeficientes del polinomio de Newton comparados con cálculos manuales
+- Pruebas de interpolación utilizando funciones polinomiales y logarítmicas
+- Verificación gráfica de la curva interpolada respecto a los puntos originales
+- Validación del cálculo correcto del valor interpolado en distintos puntos
+- Pruebas de estabilidad utilizando diferentes cantidades de datos
+- Comparación básica entre interpolación lineal y polinomial de Newton
+- Verificación de funcionamiento correcto de gráficas suavizadas utilizando NumPy
+- Pruebas integrales de compatibilidad entre métodos iterativos, regresión e interpolación
+- Validación del funcionamiento correcto de la tabla de diferencias divididas en la interfaz
+- Pruebas conjuntas de los nueve métodos implementados en la aplicación
+
+---
+
