@@ -221,3 +221,41 @@
 
 ---
 
+## v1.8.0 - 14-05-2026 - Jonathan Sánchez Pérez - Perez-png2
+
+### Agregado
+- Implementación del Método de Mínimos Cuadrados Polinomiales
+- Integración del ajuste polinomial dentro de la categoría "Ajuste de Curvas"
+- Inclusión de soporte para regresión polinomial de distintos grados
+- Entrada dinámica para el grado del polinomio ajustado
+- Uso de la librería NumPy para el cálculo automático de coeficientes polinomiales
+- Generación automática del polinomio ajustado a partir de los datos ingresados
+- Visualización gráfica del ajuste polinomial mediante curvas suavizadas
+- Representación gráfica simultánea de los puntos experimentales y la curva ajustada
+- Inclusión de los coeficientes del polinomio dentro de los resultados mostrados
+- Construcción dinámica de la ecuación polinomial ajustada en formato legible
+
+### Mejoras
+- Optimización de la arquitectura de ajuste de curvas para soportar regresiones de orden superior
+- Reestructuración de la interfaz para incorporar métodos estadísticos más avanzados
+- Mejora en la organización de entradas dinámicas reutilizando componentes para métodos de regresión
+- Actualización del tamaño de la ventana principal para mejorar la visualización de resultados y gráficas
+- Optimización del flujo de generación de gráficas utilizando curvas suavizadas con NumPy
+- Consolidación de la categoría "Ajuste de Curvas" integrando regresión lineal, polinomial e interpolación
+- Mejora en la presentación matemática de resultados mostrando funciones polinomiales completas
+- Adaptación del sistema gráfico para representar funciones no lineales de manera más precisa
+- Optimización del código interno mediante uso de funciones vectorizadas de NumPy
+
+### Pruebas
+- Pruebas manuales con conjuntos de datos cuadráticos y cúbicos
+- Verificación del cálculo correcto de coeficientes polinomiales para distintos grados
+- Validación visual del ajuste de curvas respecto a los datos experimentales
+- Comparación básica entre regresión lineal y regresión polinomial
+- Verificación de estabilidad gráfica utilizando diferentes cantidades de puntos
+- Pruebas de funcionamiento correcto para polinomios de segundo y tercer grado
+- Validación de construcción correcta de la ecuación polinomial mostrada en resultados
+- Pruebas integrales de compatibilidad entre métodos iterativos, interpolación y ajuste de curvas
+- Verificación de integración correcta de NumPy dentro de la arquitectura de la aplicación
+
+---
+
