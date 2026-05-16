@@ -3,29 +3,37 @@ import tkinter as tk
 from tkinter import ttk, messagebox
 import matplotlib.pyplot as plt
 import math
+import numpy as np
 
 #---CLASE PRINCIPAL---
 class MetodosNumericosApp:
-    VERSION = "v1.7.0"
+    VERSION = "v1.8.0"
 
     def __init__(self, root):
         self.root = root
         self.root.title(f"Suite de Métodos Numéricos {self.VERSION}")
-        self.root.geometry("900x550")
+        self.root.geometry("950x600")
 
         self.crear_layout()
         self.crear_statusbar()
 
-    #INTERFAZ
+    #---INTERFAZ---
     def crear_layout(self):
+
         self.main_frame = ttk.Frame(self.root)
         self.main_frame.pack(fill="both", expand=True, padx=10, pady=10)
 
         #Panel izquierdo
-        self.panel_control = ttk.LabelFrame(self.main_frame, text="Configuración")
+        self.panel_control = ttk.LabelFrame(
+            self.main_frame,
+            text="Configuración"
+        )
         self.panel_control.pack(side="left", fill="y", padx=5, pady=5)
 
-        ttk.Label(self.panel_control, text="Método:").pack(pady=5)
+        ttk.Label(
+            self.panel_control,
+            text="Método:"
+        ).pack(pady=5)
 
         self.metodo_var = tk.StringVar()
 
@@ -36,7 +44,7 @@ class MetodosNumericosApp:
             width=35
         )
 
-        #MÉTODOS DISPONIBLES
+        #---MÉTODOS DISPONIBLES---
         self.combo_metodos['values'] = [
 
             "───── Raíces Cerradas ─────",
@@ -48,19 +56,20 @@ class MetodosNumericosApp:
             "Newton Raphson",
             "Secante",
             "Punto Fijo",
-            
-            
+
             "───── Ajuste de Curvas ─────",
             "Mínimos Cuadrados Lineales",
+            "Mínimos Cuadrados Polinomiales",
             "Interpolación Lineal de Newton"
         ]
 
         self.combo_metodos.pack(pady=5)
+
         self.combo_metodos.bind(
             "<<ComboboxSelected>>",
             self.validar_metodo
         )
-        
+
         ttk.Button(
             self.panel_control,
             text="Cargar Método",
@@ -77,16 +86,27 @@ class MetodosNumericosApp:
         self.panel_trabajo = ttk.Frame(self.main_frame)
         self.panel_trabajo.pack(side="right", fill="both", expand=True)
 
-        self.frame_inputs = ttk.LabelFrame(self.panel_trabajo, text="Entradas")
+        self.frame_inputs = ttk.LabelFrame(
+            self.panel_trabajo,
+            text="Entradas"
+        )
         self.frame_inputs.pack(fill="x", padx=5, pady=5)
 
-        self.frame_resultados = ttk.LabelFrame(self.panel_trabajo, text="Resultados")
+        self.frame_resultados = ttk.LabelFrame(
+            self.panel_trabajo,
+            text="Resultados"
+        )
         self.frame_resultados.pack(fill="both", expand=True, padx=5, pady=5)
 
-        self.text_resultados = tk.Text(self.frame_resultados, height=10)
+        self.text_resultados = tk.Text(
+            self.frame_resultados,
+            height=10
+        )
         self.text_resultados.pack(fill="both", expand=True)
 
+    #---STATUSBAR---
     def crear_statusbar(self):
+
         self.status = tk.StringVar(value="Listo")
 
         ttk.Label(
@@ -95,18 +115,20 @@ class MetodosNumericosApp:
             relief="sunken"
         ).pack(fill="x", side="bottom")
 
-    #VALIDAR MÉTODO
+    #---VALIDAR MÉTODO---
     def validar_metodo(self, event=None):
+
         metodo = self.metodo_var.get()
+
         if "────" in metodo:
             self.combo_metodos.set("")
-            self.status.set(
-                "Seleccione un método válido"
-            )
+            self.status.set("Seleccione un método válido")
 
-    #EVALUACIÓN DE FUNCIONES
+    #---EVALUAR FUNCIONES---
     def evaluar_funcion(self, expr, x):
+
         try:
+
             permitido = {
                 "x": x,
                 "sin": math.sin,
@@ -119,20 +141,26 @@ class MetodosNumericosApp:
                 "e": math.e
             }
 
-            return eval(expr, {"__builtins__": {}}, permitido)
+            return eval(
+                expr,
+                {"__builtins__": {}},
+                permitido
+            )
 
         except Exception as e:
             raise ValueError(f"Error en la expresión: {e}")
 
-    #MÉTODO BISECCIÓN
+    #---BISECCIÓN---
     def metodo_biseccion(self, expr, a, b, erra):
+
         ejex, ejey = [], []
 
         n = 0
         error = abs(a - b)
 
         while error > erra:
-            pi = (b + a) / 2
+
+            pi = (a + b) / 2
 
             fa = self.evaluar_funcion(expr, a)
             fpi = self.evaluar_funcion(expr, pi)
@@ -151,8 +179,9 @@ class MetodosNumericosApp:
 
         return pi, error, ejex, ejey
 
-    #MÉTODO FALSA POSICIÓN
+    #---FALSA POSICIÓN---
     def metodo_falsa_posicion(self, expr, a, b, erra):
+
         ejex, ejey = [], []
 
         iteracion = 0
@@ -160,6 +189,7 @@ class MetodosNumericosApp:
         error = 100
 
         while error > erra:
+
             fa = self.evaluar_funcion(expr, a)
             fb = self.evaluar_funcion(expr, b)
 
@@ -184,14 +214,16 @@ class MetodosNumericosApp:
 
         return xr, error, ejex, ejey
 
-    #MÉTODO NEWTON RAPHSON
+    #---NEWTON RAPHSON---
     def metodo_newton_raphson(self, fun, fprima, Xi, erra):
+
         ejex, ejey = [], []
 
         error = 100
         n = 0
 
         while error > erra:
+
             fxi = self.evaluar_funcion(fun, Xi)
             fpxi = self.evaluar_funcion(fprima, Xi)
 
@@ -211,14 +243,16 @@ class MetodosNumericosApp:
 
         return Xi, error, ejex, ejey
 
-    #MÉTODO SECANTE
+    #---SECANTE---
     def metodo_secante(self, expr, x0, x1, erra):
+
         ejex, ejey = [], []
 
         error = 100
         n = 0
 
         while error > erra and n < 100:
+
             fx0 = self.evaluar_funcion(expr, x0)
             fx1 = self.evaluar_funcion(expr, x1)
 
@@ -238,8 +272,37 @@ class MetodosNumericosApp:
 
         return x1, error, ejex, ejey
 
-    #MÉTODO BÚSQUEDA POR INCREMENTOS
-    def metodo_busqueda_incrementos(self, expr, xi, xf, incremento):
+    #---PUNTO FIJO---
+    def metodo_punto_fijo(self, gx, x0, erra):
+
+        ejex, ejey = [], []
+
+        error = 100
+        n = 0
+
+        while error > erra and n < 100:
+
+            x1 = self.evaluar_funcion(gx, x0)
+
+            error = abs((x1 - x0) / x1) if x1 != 0 else 0
+
+            x0 = x1
+
+            n += 1
+
+            ejex.append(n)
+            ejey.append(error)
+
+        return x1, error, ejex, ejey
+
+    #---BÚSQUEDA POR INCREMENTOS---
+    def metodo_busqueda_incrementos(
+        self,
+        expr,
+        xi,
+        xf,
+        incremento
+    ):
 
         ejex, ejey = [], []
 
@@ -265,72 +328,38 @@ class MetodosNumericosApp:
 
         return intervalos, ejex, ejey
 
-    #MÉTODO PUNTO FIJO
-    def metodo_punto_fijo(self, gx, x0, erra):
-        ejex, ejey = [], []
+    #---MÍNIMOS CUADRADOS LINEALES---
+    def metodo_minimos_cuadrados(
+        self,
+        arreglo_x,
+        arreglo_y
+    ):
 
-        error = 100
-        n = 0
+        suma_X = sum(arreglo_x)
+        suma_Y = sum(arreglo_y)
 
-        while error > erra and n < 100:
-            x1 = self.evaluar_funcion(gx, x0)
+        suma_XY = sum(
+            arreglo_x[i] * arreglo_y[i]
+            for i in range(len(arreglo_x))
+        )
 
-            error = abs((x1 - x0) / x1) if x1 != 0 else 0
-
-            x0 = x1
-
-            n += 1
-
-            ejex.append(n)
-            ejey.append(error)
-
-        return x1, error, ejex, ejey
-    
-    #MÉTODO MÍNIMOS CUADRADOS LINEALES
-    def metodo_minimos_cuadrados(self, arreglo_x, arreglo_y):
-
-        suma_X = 0
-        for n in arreglo_x:
-            suma_X = suma_X + n
-
-        suma_Y = 0
-        for n in arreglo_y:
-            suma_Y = suma_Y + n
-
-        arreglo_XY = []
-        XY = 0
-
-        for i in range(len(arreglo_x)):
-
-            XY = arreglo_x[i] * arreglo_y[i]
-            arreglo_XY.append(XY)
-
-        suma_XY = 0
-        for n in arreglo_XY:
-
-            suma_XY = suma_XY + n
-
-        arreglo_X2 = []
-        X2 = 0
-
-        for i in range(len(arreglo_x)):
-
-            X2 = arreglo_x[i] ** 2
-            arreglo_X2.append(X2)
-
-        suma_X2 = 0
-        for n in arreglo_X2:
-
-            suma_X2 = suma_X2 + n
+        suma_X2 = sum(
+            arreglo_x[i] ** 2
+            for i in range(len(arreglo_x))
+        )
 
         n = len(arreglo_x)
 
-        a = ((n * suma_XY) - (suma_X * suma_Y)) / (
-        (n * suma_X2) - (suma_X ** 2)
+        a = (
+            (n * suma_XY) - (suma_X * suma_Y)
+        ) / (
+            (n * suma_X2) - (suma_X ** 2)
         )
 
-        b = ((suma_X * suma_XY) - (suma_Y * suma_X2)) / (
-        (suma_X ** 2) - (n * suma_X2)
+        b = (
+            (suma_X * suma_XY) - (suma_Y * suma_X2)
+        ) / (
+            (suma_X ** 2) - (n * suma_X2)
         )
 
         eje_y = []
@@ -338,27 +367,50 @@ class MetodosNumericosApp:
         for i in range(len(arreglo_x)):
 
             funcion = ((a * arreglo_x[i]) + b)
+
             eje_y.append(funcion)
 
         return a, b, eje_y
 
-    #MÉTODO INTERPOLACIÓN LINEAL DE NEWTON
-    def metodo_interpolacion_newton(self, x0, y0, x1, y1, x_interp):
-        """
-        Calcula la interpolación lineal simple entre dos puntos.
-        """
-        # Coeficiente b0 (f[x0])
+    #---MÍNIMOS CUADRADOS POLINOMIALES---
+    def metodo_minimos_cuadrados_polinomiales(
+        self,
+        arreglo_x,
+        arreglo_y,
+        grado
+    ):
+
+        coeficientes = np.polyfit(
+            arreglo_x,
+            arreglo_y,
+            grado
+        )
+
+        polinomio = np.poly1d(coeficientes)
+
+        eje_y = polinomio(arreglo_x)
+
+        return coeficientes, eje_y
+
+    #---INTERPOLACIÓN LINEAL DE NEWTON---
+    def metodo_interpolacion_newton(
+        self,
+        x0,
+        y0,
+        x1,
+        y1,
+        x_interp
+    ):
+
         b0 = y0
-        
-        # Coeficiente b1 (f[x1, x0])
+
         b1 = (y1 - y0) / (x1 - x0)
-        
-        # Fórmula: f(x) = b0 + b1(x - x0)
+
         resultado = b0 + b1 * (x_interp - x0)
-        
+
         return resultado, b1
 
-    #---CONTROLADOR DE INTERFAZ---
+    #---CARGAR MÉTODO---
     def cargar_metodo(self):
 
         for widget in self.frame_inputs.winfo_children():
@@ -369,47 +421,75 @@ class MetodosNumericosApp:
         if not metodo:
             return
 
-        #EVITAR SELECCIONAR TÍTULOS
         if "────" in metodo:
-            self.status.set("Seleccione un método válido")
+            self.status.set(
+                "Seleccione un método válido"
+            )
             return
 
-        #Campos para Interpolación Lineal de Newton
+        #---INTERPOLACIÓN---
         if metodo == "Interpolación Lineal de Newton":
-            
-            ttk.Label(self.frame_inputs, text="x0 (Punto inicial):").grid(row=0, column=0)
+
+            ttk.Label(
+                self.frame_inputs,
+                text="x0:"
+            ).grid(row=0, column=0)
+
             self.entry_x0 = ttk.Entry(self.frame_inputs)
             self.entry_x0.grid(row=0, column=1)
 
-            ttk.Label(self.frame_inputs, text="f(x0) o y0:").grid(row=1, column=0)
+            ttk.Label(
+                self.frame_inputs,
+                text="y0:"
+            ).grid(row=1, column=0)
+
             self.entry_y0 = ttk.Entry(self.frame_inputs)
             self.entry_y0.grid(row=1, column=1)
 
-            ttk.Label(self.frame_inputs, text="x1 (Punto final):").grid(row=2, column=0)
+            ttk.Label(
+                self.frame_inputs,
+                text="x1:"
+            ).grid(row=2, column=0)
+
             self.entry_x1 = ttk.Entry(self.frame_inputs)
             self.entry_x1.grid(row=2, column=1)
 
-            ttk.Label(self.frame_inputs, text="f(x1) o y1:").grid(row=3, column=0)
+            ttk.Label(
+                self.frame_inputs,
+                text="y1:"
+            ).grid(row=3, column=0)
+
             self.entry_y1 = ttk.Entry(self.frame_inputs)
             self.entry_y1.grid(row=3, column=1)
 
-            ttk.Label(self.frame_inputs, text="Valor x a interpolar:").grid(row=4, column=0)
+            ttk.Label(
+                self.frame_inputs,
+                text="x a interpolar:"
+            ).grid(row=4, column=0)
+
             self.entry_xi = ttk.Entry(self.frame_inputs)
             self.entry_xi.grid(row=4, column=1)
 
-        #Campo común
-        if metodo not in ["Mínimos Cuadrados Lineales", "Interpolación Lineal de Newton"]:
+        #---FUNCIONES---
+        if metodo not in [
+            "Mínimos Cuadrados Lineales",
+            "Mínimos Cuadrados Polinomiales",
+            "Interpolación Lineal de Newton"
+        ]:
 
-            ttk.Label(self.frame_inputs, text="Función:").grid(
-                row=0,
-                column=0,
-                padx=5
+            ttk.Label(
+                self.frame_inputs,
+                text="Función:"
+            ).grid(row=0, column=0)
+
+            self.entry_func = ttk.Entry(
+                self.frame_inputs,
+                width=35
             )
 
-            self.entry_func = ttk.Entry(self.frame_inputs, width=30)
             self.entry_func.grid(row=0, column=1)
 
-        #NEWTON RAPHSON
+        #---NEWTON---
         if metodo == "Newton Raphson":
 
             ttk.Label(
@@ -417,23 +497,27 @@ class MetodosNumericosApp:
                 text="f'(x):"
             ).grid(row=1, column=0)
 
-            self.entry_fprima = ttk.Entry(self.frame_inputs, width=30)
+            self.entry_fprima = ttk.Entry(
+                self.frame_inputs,
+                width=35
+            )
+
             self.entry_fprima.grid(row=1, column=1)
 
             ttk.Label(
                 self.frame_inputs,
-                text="x0 (Inicial):"
+                text="x0:"
             ).grid(row=2, column=0)
 
             self.entry_a = ttk.Entry(self.frame_inputs)
             self.entry_a.grid(row=2, column=1)
 
-        #SECANTE
+        #---SECANTE---
         elif metodo == "Secante":
 
             ttk.Label(
                 self.frame_inputs,
-                text="x0 (Punto 1):"
+                text="x0:"
             ).grid(row=1, column=0)
 
             self.entry_a = ttk.Entry(self.frame_inputs)
@@ -441,24 +525,24 @@ class MetodosNumericosApp:
 
             ttk.Label(
                 self.frame_inputs,
-                text="x1 (Punto 2):"
+                text="x1:"
             ).grid(row=2, column=0)
 
             self.entry_b = ttk.Entry(self.frame_inputs)
             self.entry_b.grid(row=2, column=1)
 
-        #PUNTO FIJO
+        #---PUNTO FIJO---
         elif metodo == "Punto Fijo":
 
             ttk.Label(
                 self.frame_inputs,
-                text="x0 (Inicial):"
+                text="x0:"
             ).grid(row=1, column=0)
 
             self.entry_a = ttk.Entry(self.frame_inputs)
             self.entry_a.grid(row=1, column=1)
 
-        #BÚSQUEDA POR INCREMENTOS
+        #---BÚSQUEDA---
         elif metodo == "Búsqueda por Incrementos":
 
             ttk.Label(
@@ -483,30 +567,57 @@ class MetodosNumericosApp:
             ).grid(row=3, column=0)
 
             self.entry_incremento = ttk.Entry(self.frame_inputs)
+
             self.entry_incremento.grid(row=3, column=1)
 
             self.entry_incremento.insert(0, "0.1")
 
-        #MÍNIMOS CUADRADOS
-        elif metodo == "Mínimos Cuadrados Lineales":
+        #---MÍNIMOS CUADRADOS---
+        elif metodo in [
+            "Mínimos Cuadrados Lineales",
+            "Mínimos Cuadrados Polinomiales"
+        ]:
 
             ttk.Label(
                 self.frame_inputs,
-                text="Valores X (separados por comas):"
+                text="Valores X:"
             ).grid(row=1, column=0)
 
-            self.entry_x = ttk.Entry(self.frame_inputs, width=40)
+            self.entry_x = ttk.Entry(
+                self.frame_inputs,
+                width=40
+            )
+
             self.entry_x.grid(row=1, column=1)
 
             ttk.Label(
                 self.frame_inputs,
-                text="Valores Y (separados por comas):"
+                text="Valores Y:"
             ).grid(row=2, column=0)
 
-            self.entry_y = ttk.Entry(self.frame_inputs, width=40)
+            self.entry_y = ttk.Entry(
+                self.frame_inputs,
+                width=40
+            )
+
             self.entry_y.grid(row=2, column=1)
-            
-        #BISECCIÓN Y FALSA POSICIÓN
+
+            if metodo == "Mínimos Cuadrados Polinomiales":
+
+                ttk.Label(
+                    self.frame_inputs,
+                    text="Grado:"
+                ).grid(row=3, column=0)
+
+                self.entry_grado = ttk.Entry(
+                    self.frame_inputs
+                )
+
+                self.entry_grado.grid(row=3, column=1)
+
+                self.entry_grado.insert(0, "2")
+
+        #---BISECCIÓN/FALSA POSICIÓN---
         elif metodo in ["Bisección", "Falsa Posición"]:
 
             ttk.Label(
@@ -525,8 +636,13 @@ class MetodosNumericosApp:
             self.entry_b = ttk.Entry(self.frame_inputs)
             self.entry_b.grid(row=2, column=1)
 
-        #ERROR (No aplica a Interpolación ni Búsqueda)
-        if metodo not in ["Búsqueda por Incrementos", "Mínimos Cuadrados Lineales", "Interpolación Lineal de Newton"]:
+        #---TOLERANCIA---
+        if metodo not in [
+            "Búsqueda por Incrementos",
+            "Mínimos Cuadrados Lineales",
+            "Mínimos Cuadrados Polinomiales",
+            "Interpolación Lineal de Newton"
+        ]:
 
             ttk.Label(
                 self.frame_inputs,
@@ -534,52 +650,76 @@ class MetodosNumericosApp:
             ).grid(row=3, column=0)
 
             self.entry_error = ttk.Entry(self.frame_inputs)
+
             self.entry_error.grid(row=3, column=1)
 
             self.entry_error.insert(0, "0.0001")
 
-        self.status.set(f"Configuración para {metodo} cargada")
+        self.status.set(
+            f"Configuración para {metodo} cargada"
+        )
 
-    #---EJECUCIÓN---
+    #---EJECUTAR---
     def ejecutar_metodo(self):
 
         try:
+
             metodo = self.metodo_var.get()
 
-            #INTERPOLACIÓN LINEAL DE NEWTON
+            #---INTERPOLACIÓN---
             if metodo == "Interpolación Lineal de Newton":
+
                 x0 = float(self.entry_x0.get())
                 y0 = float(self.entry_y0.get())
                 x1 = float(self.entry_x1.get())
                 y1 = float(self.entry_y1.get())
                 xi = float(self.entry_xi.get())
 
-                resultado, b1 = self.metodo_interpolacion_newton(x0, y0, x1, y1, xi)
+                resultado, b1 = self.metodo_interpolacion_newton(
+                    x0,
+                    y0,
+                    x1,
+                    y1,
+                    xi
+                )
 
                 self.text_resultados.delete(1.0, tk.END)
-                texto_res = (
+
+                texto = (
                     f"MÉTODO: {metodo}\n"
                     + "-" * 30
-                    + f"\nCoeficiente b1 (Pendiente): {b1:.6f}"
-                    + f"\nValor interpolado en x={xi}: {resultado:.6f}"
+                    + f"\nPendiente: {b1}"
+                    + f"\nResultado: {resultado}"
                 )
-                self.text_resultados.insert(tk.END, texto_res)
 
-                #Gráfica
-                plt.figure(f"Gráfica - {metodo}")
-                plt.plot([x0, x1], [y0, y1], marker='o', color='blue', label='Puntos conocidos')
-                plt.plot(xi, resultado, marker='x', color='red', markersize=10, label='Punto interpolado')
-                plt.title("Interpolación Lineal de Newton")
-                plt.xlabel("x")
-                plt.ylabel("f(x)")
+                self.text_resultados.insert(
+                    tk.END,
+                    texto
+                )
+
+                plt.figure("Interpolación")
+
+                plt.plot(
+                    [x0, x1],
+                    [y0, y1],
+                    marker='o'
+                )
+
+                plt.plot(
+                    xi,
+                    resultado,
+                    marker='x',
+                    markersize=10
+                )
+
                 plt.grid(True)
-                plt.legend()
                 plt.show()
 
-            elif metodo != "Mínimos Cuadrados Lineales":
+            elif metodo != "Mínimos Cuadrados Lineales" and metodo != "Mínimos Cuadrados Polinomiales":
+
                 expr = self.entry_func.get()
 
-            #BISECCIÓN
+            #---BISECCIÓN---
             if metodo == "Bisección":
 
                 erra = float(self.entry_error.get())
@@ -594,7 +734,7 @@ class MetodosNumericosApp:
                     erra
                 )
 
-            #FALSA POSICIÓN
+            #---FALSA POSICIÓN---
             elif metodo == "Falsa Posición":
 
                 erra = float(self.entry_error.get())
@@ -609,23 +749,23 @@ class MetodosNumericosApp:
                     erra
                 )
 
-            #NEWTON
+            #---NEWTON---
             elif metodo == "Newton Raphson":
 
                 erra = float(self.entry_error.get())
 
                 x0 = float(self.entry_a.get())
 
-                f_der = self.entry_fprima.get()
+                fprima = self.entry_fprima.get()
 
                 res, err, ex, ey = self.metodo_newton_raphson(
                     expr,
-                    f_der,
+                    fprima,
                     x0,
                     erra
                 )
 
-            #SECANTE
+            #---SECANTE---
             elif metodo == "Secante":
 
                 erra = float(self.entry_error.get())
@@ -640,22 +780,7 @@ class MetodosNumericosApp:
                     erra
                 )
 
-            #BÚSQUEDA POR INCREMENTOS
-            elif metodo == "Búsqueda por Incrementos":
-
-                xi = float(self.entry_a.get())
-                xf = float(self.entry_b.get())
-
-                incremento = float(self.entry_incremento.get())
-
-                intervalos, ex, ey = self.metodo_busqueda_incrementos(
-                    expr,
-                    xi,
-                    xf,
-                    incremento
-                )
-
-            #PUNTO FIJO
+            #---PUNTO FIJO---
             elif metodo == "Punto Fijo":
 
                 erra = float(self.entry_error.get())
@@ -667,8 +792,25 @@ class MetodosNumericosApp:
                     x0,
                     erra
                 )
-                
-            #MÍNIMOS CUADRADOS
+
+            #---BÚSQUEDA---
+            elif metodo == "Búsqueda por Incrementos":
+
+                xi = float(self.entry_a.get())
+                xf = float(self.entry_b.get())
+
+                incremento = float(
+                    self.entry_incremento.get()
+                )
+
+                intervalos, ex, ey = self.metodo_busqueda_incrementos(
+                    expr,
+                    xi,
+                    xf,
+                    incremento
+                )
+
+            #---MÍNIMOS CUADRADOS LINEALES---
             elif metodo == "Mínimos Cuadrados Lineales":
 
                 arreglo_x = list(
@@ -679,64 +821,235 @@ class MetodosNumericosApp:
                     map(float, self.entry_y.get().split(","))
                 )
 
-                if len(arreglo_x) != len(arreglo_y):
-                    raise ValueError(
-                        "Los arreglos X y Y deben tener la misma cantidad de elementos"
-                    )
-
                 a, b, eje_y = self.metodo_minimos_cuadrados(
                     arreglo_x,
                     arreglo_y
                 )
 
-            #---RESULTADOS PARA MÉTODOS DE RAÍCES Y AJUSTE---
-            if metodo not in ["Interpolación Lineal de Newton"]:
-                self.text_resultados.delete(1.0, tk.END)
+            #---MÍNIMOS CUADRADOS POLINOMIALES---
+            elif metodo == "Mínimos Cuadrados Polinomiales":
 
+                arreglo_x = list(
+                    map(float, self.entry_x.get().split(","))
+                )
+
+                arreglo_y = list(
+                    map(float, self.entry_y.get().split(","))
+                )
+
+                grado = int(
+                    self.entry_grado.get()
+                )
+
+                coeficientes, eje_y = self.metodo_minimos_cuadrados_polinomiales(
+                    arreglo_x,
+                    arreglo_y,
+                    grado
+                )
+
+            #---RESULTADOS---
+            if metodo != "Interpolación Lineal de Newton":
+
+                self.text_resultados.delete(
+                    1.0,
+                    tk.END
+                )
+
+                #---BÚSQUEDA---
                 if metodo == "Búsqueda por Incrementos":
-                    texto = (f"MÉTODO: {metodo}\n" + "-" * 30 + "\nIntervalos con posibles raíces:\n\n")
+
+                    texto = (
+                        f"MÉTODO: {metodo}\n"
+                        + "-" * 30
+                        + "\nIntervalos encontrados:\n\n"
+                    )
+
                     if intervalos:
+
                         for i, intervalo in enumerate(intervalos, start=1):
-                            texto += (f"Raíz {i}: [{intervalo[0]:.6f}, {intervalo[1]:.6f}]\n")
+
+                            texto += (
+                                f"Raíz {i}: "
+                                f"[{intervalo[0]:.6f}, "
+                                f"{intervalo[1]:.6f}]\n"
+                            )
+
                     else:
-                        texto += "No se encontraron cambios de signo."
-                    self.text_resultados.insert(tk.END, texto)
+                        texto += "No se encontraron raíces"
 
+                    self.text_resultados.insert(
+                        tk.END,
+                        texto
+                    )
+
+                #---LINEALES---
                 elif metodo == "Mínimos Cuadrados Lineales":
-                    self.text_resultados.insert(tk.END, f"MÉTODO: {metodo}\n" + "-" * 30 + f"\nPendiente (a): {a}\nIntercepto (b): {b}\nFunción Ajustada: y = {a}x + {b}")
 
+                    texto = (
+                        f"MÉTODO: {metodo}\n"
+                        + "-" * 30
+                        + f"\nPendiente (a): {a}"
+                        + f"\nIntercepto (b): {b}"
+                        + f"\n\nRecta Ajustada:"
+                        + f"\ny = {a}x + {b}"
+                    )
+
+                    self.text_resultados.insert(
+                        tk.END,
+                        texto
+                    )
+
+                #---POLINOMIALES---
+                elif metodo == "Mínimos Cuadrados Polinomiales":
+
+                    funcion = ""
+
+                    grado_actual = grado
+
+                    for coef in coeficientes:
+
+                        if grado_actual > 1:
+
+                            funcion += (
+                                f"{coef:.4f}x^{grado_actual} + "
+                            )
+
+                        elif grado_actual == 1:
+
+                            funcion += (
+                                f"{coef:.4f}x + "
+                            )
+
+                        else:
+
+                            funcion += (
+                                f"{coef:.4f}"
+                            )
+
+                        grado_actual -= 1
+
+                    texto = (
+                        f"MÉTODO: {metodo}\n"
+                        + "-" * 30
+                        + f"\nCoeficientes:\n{coeficientes}"
+                        + f"\n\nPolinomio Ajustado:"
+                        + f"\ny = {funcion}"
+                    )
+
+                    self.text_resultados.insert(
+                        tk.END,
+                        texto
+                    )
+
+                #---RAÍCES---
                 else:
-                    self.text_resultados.insert(tk.END, f"MÉTODO: {metodo}\n" + "-" * 30 + f"\nRaíz estimada: {res}\nError final: {err}\nIteraciones: {len(ex)}")
 
-                #---GRÁFICA (Raíces y Ajuste)---
+                    texto = (
+                        f"MÉTODO: {metodo}\n"
+                        + "-" * 30
+                        + f"\nRaíz estimada: {res}"
+                        + f"\nError final: {err}"
+                        + f"\nIteraciones: {len(ex)}"
+                    )
+
+                    self.text_resultados.insert(
+                        tk.END,
+                        texto
+                    )
+
+                #---GRÁFICAS---
                 if metodo == "Búsqueda por Incrementos":
-                    plt.figure("Búsqueda por Incrementos")
-                    plt.plot(ex, ey, marker='o', color='green')
-                    plt.axhline(0, color='black')
-                    plt.title("Búsqueda por Incrementos")
-                    plt.xlabel("x"); plt.ylabel("f(x)"); plt.grid(True)
+
+                    plt.figure("Búsqueda")
+
+                    plt.plot(
+                        ex,
+                        ey,
+                        marker='o'
+                    )
+
+                    plt.axhline(0)
+
+                    plt.grid(True)
 
                 elif metodo == "Mínimos Cuadrados Lineales":
-                    plt.figure("Mínimos Cuadrados Lineales")
-                    plt.plot(arreglo_x, eje_y, label="Recta Ajustada")
-                    plt.title("Método de Mínimos Cuadrados")
-                    plt.xlabel("Eje X"); plt.ylabel("Eje Y"); plt.grid(True); plt.legend()
+
+                    plt.figure("Mínimos Cuadrados")
+
+                    plt.scatter(
+                        arreglo_x,
+                        arreglo_y
+                    )
+
+                    plt.plot(
+                        arreglo_x,
+                        eje_y
+                    )
+
+                    plt.grid(True)
+
+                elif metodo == "Mínimos Cuadrados Polinomiales":
+
+                    plt.figure(
+                        "Mínimos Cuadrados Polinomiales"
+                    )
+
+                    plt.scatter(
+                        arreglo_x,
+                        arreglo_y
+                    )
+
+                    x_suave = np.linspace(
+                        min(arreglo_x),
+                        max(arreglo_x),
+                        200
+                    )
+
+                    polinomio = np.poly1d(
+                        coeficientes
+                    )
+
+                    y_suave = polinomio(
+                        x_suave
+                    )
+
+                    plt.plot(
+                        x_suave,
+                        y_suave
+                    )
+
+                    plt.grid(True)
 
                 else:
-                    plt.figure("Análisis de Convergencia")
-                    plt.plot(ex, ey, marker='o', color='red')
-                    plt.title(f"Caída del Error - {metodo}")
-                    plt.xlabel("Iteración"); plt.ylabel("Error"); plt.grid(True)
+
+                    plt.figure("Convergencia")
+
+                    plt.plot(
+                        ex,
+                        ey,
+                        marker='o'
+                    )
+
+                    plt.grid(True)
 
                 plt.show()
 
-            self.status.set("Ejecución exitosa")
+            self.status.set(
+                "Ejecución exitosa"
+            )
 
         except Exception as e:
-            messagebox.showerror("Error", f"Detalle: {e}")
+
+            messagebox.showerror(
+                "Error",
+                f"Detalle: {e}"
+            )
 
 #---MAIN---
 if __name__ == "__main__":
+
     root = tk.Tk()
+
     app = MetodosNumericosApp(root)
-    root.mainloop()    
+
+    root.mainloop()
