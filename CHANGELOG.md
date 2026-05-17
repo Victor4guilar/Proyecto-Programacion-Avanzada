@@ -221,7 +221,7 @@
 
 ---
 
-## v1.8.0 - 14-05-2026 - Jonathan Sánchez Pérez - Perez-png2
+## v1.8.0 - 15-05-2026 - Jonathan Sánchez Pérez - Perez-png2
 
 ### Agregado
 - Implementación del Método de Mínimos Cuadrados Polinomiales
