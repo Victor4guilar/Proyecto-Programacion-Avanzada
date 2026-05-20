@@ -348,3 +348,52 @@
 
 ---
 
+## v1.11.0 - 19-05-2026 - Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+### Agregado
+- Implementación del Método de Diferencias Finitas para Derivación Numérica
+- Integración de una nueva categoría visual llamada "Derivación Numérica" dentro del selector de métodos
+- Inclusión del método "Diferencias Finitas" dentro de la arquitectura principal de la aplicación
+- Entrada dinámica de función matemática \(f(x)\)
+- Inclusión de parámetro dinámico para valor de evaluación \(x\)
+- Inclusión de parámetro dinámico para tamaño de paso \(h\)
+- Implementación de aproximación de Primera Derivada mediante Diferencias Finitas Hacia Adelante
+- Implementación de aproximación de Primera Derivada mediante Diferencias Finitas Hacia Atrás
+- Implementación de aproximación de Primera Derivada mediante Diferencias Finitas Centrales
+- Implementación de aproximación de Segunda Derivada mediante Diferencias Finitas Hacia Adelante
+- Implementación de aproximación de Segunda Derivada mediante Diferencias Finitas Hacia Atrás
+- Implementación de aproximación de Segunda Derivada mediante Diferencias Finitas Centrales
+- Visualización simultánea de resultados de derivación numérica dentro del panel de resultados
+- Representación gráfica de la función original utilizada para el cálculo de derivadas
+- Visualización gráfica del punto evaluado sobre la función
+- Compatibilidad con funciones algebraicas, trigonométricas, exponenciales y logarítmicas
+- Integración completa con el sistema de evaluación matemática reutilizable existente
+
+### Mejoras
+- Expansión de la arquitectura modular para soportar métodos de derivación numérica
+- Reestructuración del selector de métodos incorporando una nueva clasificación temática
+- Optimización del sistema dinámico de entradas permitiendo configuración específica para métodos de derivación
+- Mejora en la organización interna separando métodos de raíces, ajuste de curvas y derivación numérica
+- Optimización del flujo de ejecución para soportar cálculos numéricos no iterativos adicionales
+- Consolidación del sistema gráfico reutilizando infraestructura existente de visualización matemática
+- Mejora en la presentación de resultados agrupando derivadas de primer y segundo orden
+- Optimización del manejo de funciones evaluadas mediante reutilización del motor matemático interno
+- Adaptación de la interfaz para soportar futuras expansiones relacionadas con cálculo numérico
+- Fortalecimiento de la arquitectura modular permitiendo integración de nuevos métodos avanzados
+
+### Pruebas
+- Pruebas manuales utilizando funciones polinomiales
+- Pruebas de derivación con funciones trigonométricas
+- Validación numérica utilizando funciones exponenciales y logarítmicas
+- Comparación básica entre aproximaciones hacia adelante, hacia atrás y centrales
+- Verificación del comportamiento utilizando distintos tamaños de paso \(h\)
+- Validación del cálculo correcto de primera y segunda derivada
+- Verificación gráfica de la función evaluada respecto al punto seleccionado
+- Pruebas de estabilidad numérica con diferentes valores de entrada
+- Validación del funcionamiento dinámico de entradas específicas para derivación numérica
+- Pruebas integrales de compatibilidad entre métodos de raíces, interpolación, regresión y derivación
+- Verificación de integración correcta dentro de la arquitectura general de la aplicación
+- Pruebas conjuntas de los once métodos implementados en la Suite de Métodos Numéricos
+
+---
+
