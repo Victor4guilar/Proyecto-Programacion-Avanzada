@@ -304,3 +304,47 @@
 
 ---
 
+## v1.10.0 - 19-05-2026 - Víctor Aguilar Ortiz - Victor4guilar
+
+### Agregado
+- Implementación del Método de Interpolación de Lagrange
+- Integración del método dentro de la categoría "Ajuste de Curvas"
+- Inclusión de soporte para interpolación polinomial utilizando la formulación clásica de Lagrange
+- Entrada dinámica de arreglos de datos \(X\) y \(Y\) separados por comas
+- Inclusión de entrada para el valor \(x\) a interpolar
+- Cálculo automático de los polinomios base \(L_i(x)\)
+- Evaluación automática del polinomio interpolante para cualquier punto ingresado
+- Validación para impedir valores repetidos en los datos de entrada \(X\)
+- Representación gráfica de la curva interpolada generada mediante el método de Lagrange
+- Visualización simultánea de puntos experimentales y curva interpolada
+- Visualización del punto interpolado directamente sobre la gráfica
+- Uso de NumPy para generar curvas suavizadas en la representación visual
+- Compatibilidad del método con interpolaciones polinomiales de orden superior utilizando múltiples puntos
+
+### Mejoras
+- Reestructuración de la arquitectura interna de interpolación para soportar múltiples técnicas polinomiales
+- Consolidación de la categoría "Ajuste de Curvas" incorporando Interpolación Lineal de Newton, Polinomios de Newton e Interpolación de Lagrange
+- Optimización del sistema dinámico de entradas reutilizando estructuras existentes
+- Mejora en la organización del flujo de ejecución para métodos de interpolación no iterativos
+- Adaptación del sistema gráfico para representar funciones interpoladas mediante múltiples evaluaciones sucesivas
+- Reutilización de la infraestructura gráfica existente para mantener compatibilidad entre métodos
+- Optimización del manejo dinámico de resultados dentro de la interfaz
+- Consolidación de la arquitectura modular permitiendo futuras expansiones de métodos numéricos
+- Integración completa del método con el sistema de carga automática y ejecución dinámica de la aplicación
+
+### Pruebas
+- Pruebas manuales con conjuntos de datos polinomiales de distintos órdenes
+- Validación del cálculo correcto de interpolación utilizando múltiples puntos
+- Comparación básica entre Interpolación de Newton y Lagrange
+- Verificación del valor interpolado mediante cálculos manuales
+- Validación gráfica de la curva interpolada respecto a los datos originales
+- Verificación del correcto funcionamiento para distintos tamaños de arreglos de datos
+- Pruebas de estabilidad ante diferentes distribuciones de puntos experimentales
+- Validación del sistema de detección de valores repetidos en \(X\)
+- Verificación del funcionamiento correcto de gráficas suavizadas utilizando NumPy
+- Pruebas integrales de compatibilidad entre métodos iterativos, regresión e interpolación
+- Validación del correcto funcionamiento dinámico de entradas y resultados
+- Pruebas conjuntas de los diez métodos implementados en la aplicación
+
+---
+
