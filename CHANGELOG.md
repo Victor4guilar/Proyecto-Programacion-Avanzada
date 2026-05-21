@@ -397,3 +397,48 @@
 
 ---
 
+## v1.12.0 - 20-05-2026 - Jonathan Sánchez Pérez - Perez-png2
+
+### Agregado
+- Implementación del Método del Trapecio para Integración Numérica
+- Creación de la nueva categoría "Integración Numérica" dentro del selector de métodos
+- Inclusión del método "Trapecio" dentro de la Suite de Métodos Numéricos
+- Entrada dinámica para función matemática f(x)
+- Inclusión de límite inferior de integración
+- Inclusión de límite superior de integración
+- Implementación de cálculo automático de integral definida mediante la Regla del Trapecio
+- Evaluación automática de extremos del intervalo de integración
+- Visualización del resultado numérico dentro del panel de resultados
+- Representación gráfica de la función evaluada
+- Visualización geométrica del área aproximada mediante trapecios
+- Compatibilidad con funciones algebraicas
+- Compatibilidad con funciones trigonométricas
+- Compatibilidad con funciones exponenciales
+- Compatibilidad con funciones logarítmicas
+- Integración con el motor matemático reutilizable existente
+
+### Mejoras
+- Expansión de la arquitectura modular para soportar métodos de integración numérica
+- Reorganización estructural del selector de métodos incorporando una nueva categoría temática
+- Optimización del sistema dinámico de entradas para cálculos de integración
+- Consolidación de separación conceptual entre raíces, interpolación, derivación e integración numérica
+- Adaptación del sistema gráfico para representar aproximaciones geométricas de áreas
+- Reutilización del sistema interno de evaluación matemática
+- Optimización del flujo de ejecución para métodos de integración
+- Fortalecimiento de la arquitectura modular permitiendo futuras expansiones relacionadas con integración numérica avanzada
+- Mejora de compatibilidad entre módulos previamente implementados
+
+### Pruebas
+- Pruebas manuales utilizando funciones polinomiales
+- Validación utilizando funciones trigonométricas
+- Verificación utilizando funciones exponenciales
+- Verificación utilizando funciones logarítmicas
+- Comparación básica entre resultado numérico y solución analítica conocida
+- Validación del comportamiento utilizando distintos intervalos de integración
+- Verificación gráfica de aproximación geométrica mediante trapecios
+- Validación del funcionamiento dinámico de entradas específicas para integración numérica
+- Pruebas de compatibilidad con métodos previamente implementados
+- Validación integral de funcionamiento de los doce métodos disponibles en la aplicación
+
+---
+
