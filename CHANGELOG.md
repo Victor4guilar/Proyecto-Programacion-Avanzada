@@ -442,3 +442,44 @@
 
 ---
 
+## v1.13.0 - 22-05-2026 - Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Agregado
+- Método de Integración de Simpson.
+- Implementación de Simpson 1/3 Simple.
+- Implementación de Simpson 1/3 Múltiple.
+- Implementación de Simpson 3/8 Simple.
+- Implementación de Simpson 3/8 Compuesta.
+- Cálculo automático de error porcentual relativo.
+- Gráfica del Método de Simpson mostrando:
+  - Curva de la función.
+  - División de subintervalos.
+  - Puntos usados por Simpson.
+- Organización visual de métodos por categorías:
+  - Raíces Cerradas.
+  - Raíces Abiertas.
+  - Regresión e Interpolación.
+  - Derivación Numérica.
+  - Integración Numérica.
+
+### Mejorado
+- Interfaz de Interpolación Lineal de Newton simplificada.
+- Entrada de datos más intuitiva usando:
+  - Valores X.
+  - Valores Y.
+  - Incremento.
+- Organización interna del selector de métodos.
+- Experiencia visual general de la interfaz.
+- Compatibilidad mejorada para funciones matemáticas.
+- Integración visual del Método de Simpson.
+
+### Corregido
+- Eliminado bloque duplicado de "Función" en Diferencias Finitas.
+- Eliminado bloque duplicado de "Función" en Método de Trapecios.
+- Corregido conflicto visual entre Tolerancia y Simpson.
+- Corregido posicionamiento de controles del Método de Simpson.
+- Corregida reconstrucción dinámica de widgets.
+- Corregidos problemas visuales al cambiar entre métodos.
+- Corregida selección de métodos agrupados.
+
+---
