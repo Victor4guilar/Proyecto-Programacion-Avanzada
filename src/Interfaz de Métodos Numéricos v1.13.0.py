@@ -1985,16 +1985,13 @@ class MetodosNumericosApp:
             #---TRAPECIOS---
             elif metodo == "Método de Trapecios":
                 try:
-                    # 1. Lectura segura de entradas
                     expr = self.entry_func.get()
                     a = float(self.entry_a.get())
                     b = float(self.entry_b.get())
                     n = int(self.entry_n.get())
-    
-                    # 2. Llamada al cálculo matemático
+  
                     resultado, x_vals, y_vals = self.metodo_trapecios(expr, a, b, n)
     
-                    # 3. Impresión limpia en la interfaz
                     self.status.set("Cálculo completado exitosamente.")
                     
                     self.text_resultados.config(state="normal") # Desbloqueamos caja
@@ -2013,7 +2010,6 @@ class MetodosNumericosApp:
     
                     print(f"Resultado: {resultado}")
     
-                    # 4. Rutina de Graficación (Se queda exactamente igual)
                     plt.figure("Método de Trapecios")
                     x_cont = np.linspace(a, b, 200)
                     y_cont = [self.evaluar_funcion(expr, x) for x in x_cont]
