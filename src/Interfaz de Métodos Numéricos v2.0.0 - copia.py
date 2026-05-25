@@ -7,7 +7,7 @@ import numpy as np
 
 #---CLASE PRINCIPAL---
 class MetodosNumericosApp:
-    VERSION = "v1.13.0"
+    VERSION = "v2.0.0"
     
     def __init__(
         self,
