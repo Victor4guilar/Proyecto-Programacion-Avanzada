@@ -483,3 +483,49 @@
 - Corregida selección de métodos agrupados.
 
 ---
+
+## v2.0.0 - 24-05-2026 - Jonathan Sánchez Pérez - Perez-png2
+
+### Agregado
+- Implementación de búsqueda dinámica de métodos mediante escritura directa dentro del selector "Método"
+- Integración de filtrado automático de métodos conforme el usuario escribe
+- Conservación del sistema de selección tradicional mediante ComboBox desplegable
+- Inclusión de nueva opción "Tipo de Error para Gráficas"
+- Implementación de selección entre:
+  - Error Absoluto
+  - Error Relativo
+  - Error Porcentual
+- Incorporación de cálculo dinámico del error seleccionado durante las iteraciones
+- Generación automática de gráficas utilizando el tipo de error elegido por el usuario
+- Integración del nuevo sistema de errores en:
+  - Método de Bisección
+  - Método de Falsa Posición
+  - Método de Newton-Raphson
+  - Método de Punto Fijo
+- Sustitución de gráficas tradicionales de convergencia por gráficas dinámicas basadas en el error seleccionado
+- Centralización del cálculo de errores mediante función reutilizable interna
+
+### Mejoras
+- Optimización de experiencia de usuario permitiendo búsqueda rápida de métodos numéricos
+- Mejora en la navegación del selector de métodos reduciendo tiempo de localización
+- Reestructuración interna del sistema gráfico para soportar múltiples tipos de error
+- Adaptación modular de métodos iterativos para compartir la misma lógica de cálculo de error
+- Mejora en la arquitectura interna permitiendo futuras expansiones de métricas numéricas
+- Optimización del flujo de visualización de convergencia matemática
+- Consolidación del manejo dinámico de gráficas dentro de métodos iterativos
+- Mejora en la flexibilidad del análisis numérico permitiendo distintas métricas de precisión
+
+### Pruebas
+- Pruebas manuales de escritura dinámica en selector de métodos
+- Verificación de filtrado automático utilizando nombres parciales de métodos
+- Validación de cálculo de Error Absoluto
+- Validación de cálculo de Error Relativo
+- Verificación de generación gráfica utilizando distintos tipos de error
+- Pruebas de funcionamiento en Bisección
+- Pruebas de funcionamiento en Falsa Posición
+- Pruebas de funcionamiento en Newton-Raphson
+- Pruebas de funcionamiento en Punto Fijo
+- Validación integral de compatibilidad entre las nuevas funciones y los métodos implementados
+
+---
+
