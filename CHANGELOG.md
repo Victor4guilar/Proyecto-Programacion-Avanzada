@@ -529,3 +529,61 @@
 
 ---
 
+## v3.0.0 - 25-05-2026 - Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+### Agregado
+- Integración completa de gráficas dentro de la interfaz principal
+- Implementación de visualización embebida de gráficos sin ventanas externas
+- Incorporación de sistema gráfico dual para métodos numéricos avanzados
+- Generación automática de segunda gráfica basada en el tipo de error seleccionado
+- Compatibilidad del sistema dual de gráficas con:
+  - Métodos de regresión e interpolación
+  - Derivación numérica
+  - Integración numérica
+  - Métodos implementados posteriormente a Punto Fijo
+- Conservación de comportamiento especializado para:
+  - Método de Bisección
+  - Método de Falsa Posición
+  - Método de Newton-Raphson
+  - Método de Punto Fijo
+- Integración del tipo de error seleccionado dentro del flujo completo de visualización matemática
+- Consolidación visual del entorno de trabajo dentro de una única interfaz
+
+### Mejoras
+- Optimización del selector "Tipo de Método" permitiendo escritura continua del nombre del método
+- Mejora de experiencia de usuario durante búsqueda dinámica de métodos
+- Reestructuración del sistema gráfico para soportar múltiples visualizaciones simultáneas
+- Mejora de organización visual de resultados y análisis numérico
+- Adaptación de métodos numéricos al nuevo sistema gráfico unificado
+- Optimización interna de generación y actualización de gráficos
+- Mejora del análisis de convergencia mediante visualización complementaria de errores
+- Refactorización parcial del flujo de trabajo de la interfaz
+
+### Correcciones
+- Corrección del problema de escritura letra por letra dentro del selector de métodos
+- Corrección del cálculo de Error Absoluto
+- Corrección del cálculo de Error Relativo
+- Corrección del cálculo de Error Porcentual
+- Corrección de generación de gráficas asociadas al tipo de error seleccionado
+- Ajuste de coherencia entre resultados numéricos obtenidos en interfaz y resultados validados mediante implementaciones independientes
+- Corrección de inconsistencias entre cálculos iterativos y representación gráfica
+- Corrección de sincronización entre datos obtenidos y visualización matemática
+- Corrección de comportamiento interno del sistema de errores dinámicos
+
+### Pruebas
+- Validación de escritura dinámica del selector de métodos
+- Comparación de resultados obtenidos contra implementaciones individuales independientes
+- Validación de Error Absoluto
+- Validación de Error Relativo
+- Validación de Error Porcentual
+- Verificación de concordancia entre resultados numéricos y representación gráfica
+- Pruebas de generación de doble gráfica en métodos compatibles
+- Pruebas de generación de gráfica única en:
+  - Método de Bisección
+  - Método de Falsa Posición
+  - Método de Newton-Raphson
+  - Método de Punto Fijo
+- Verificación de estabilidad visual con gráficas integradas dentro de la interfaz
+- Validación integral de compatibilidad entre interfaz, cálculos numéricos y sistema gráfico
+
+---
