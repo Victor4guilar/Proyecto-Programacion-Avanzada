@@ -587,3 +587,41 @@
 - Validación integral de compatibilidad entre interfaz, cálculos numéricos y sistema gráfico
 
 ---
+
+## v3.1.0 - 28-05-2026 - Víctor Aguilar Ortiz - Victor4guilar
+
+### Agregado
+- Implementación del Método de Euler para la solución numérica de Ecuaciones Diferenciales Ordinarias (EDO)
+- Creación de la nueva categoría "Ecuaciones Diferenciales Ordinarias" dentro del selector de métodos
+- Integración del Método de Euler dentro de la arquitectura principal de la aplicación
+- Entrada dinámica para la ecuación diferencial en la forma \(dy/dx = f(x,y)\)
+- Inclusión de parámetros de entrada para valor inicial \(x_0\), condición inicial \(y_0\), valor final \(x_f\) y número de iteraciones \(n\)
+- Cálculo automático del tamaño de paso \(h\)
+- Generación iterativa de aproximaciones mediante el método de Euler
+- Almacenamiento de los valores calculados de \(x\) y \(y\) durante cada iteración
+- Compatibilidad con funciones algebraicas, trigonométricas, exponenciales y logarítmicas
+- Integración completa con el motor matemático reutilizable existente
+
+### Mejoras
+- Expansión de la arquitectura modular para soportar métodos de resolución de ecuaciones diferenciales ordinarias
+- Reestructuración del selector de métodos incorporando una nueva clasificación temática
+- Adaptación del sistema dinámico de entradas para parámetros específicos de EDO
+- Consolidación de la organización interna entre métodos de raíces, interpolación, derivación, integración y ecuaciones diferenciales
+- Reutilización del sistema de evaluación matemática para el cálculo de pendientes \(f(x,y)\)
+- Optimización del flujo de ejecución para soportar métodos de aproximación de soluciones numéricas
+- Fortalecimiento de la escalabilidad de la aplicación para futuras implementaciones de métodos como Heun, Ralston y Runge-Kutta
+- Integración del Método de Euler con el sistema general de resultados y visualización de la aplicación
+
+### Pruebas
+- Pruebas manuales con ecuaciones diferenciales de primer orden
+- Validación de resultados utilizando ejemplos académicos conocidos
+- Verificación del cálculo correcto del tamaño de paso \(h\)
+- Comparación básica entre resultados numéricos y soluciones analíticas disponibles
+- Validación del comportamiento utilizando diferentes cantidades de iteraciones
+- Verificación de estabilidad para distintos valores iniciales
+- Pruebas de compatibilidad con funciones algebraicas, trigonométricas y exponenciales
+- Validación del funcionamiento dinámico de las entradas específicas para EDO
+- Pruebas integrales de compatibilidad con los métodos previamente implementados
+- Verificación del correcto funcionamiento del Método de Euler dentro de la Suite de Métodos Numéricos
+
+---
