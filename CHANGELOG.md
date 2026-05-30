@@ -625,3 +625,52 @@
 - Verificación del correcto funcionamiento del Método de Euler dentro de la Suite de Métodos Numéricos
 
 ---
+
+## v3.2.0 - 30-05-2026 - Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+### Agregado
+
+* Implementación del Método de Runge-Kutta de Segundo Orden para la resolución numérica de Ecuaciones Diferenciales Ordinarias (EDO)
+* Integración del Método de Runge-Kutta dentro de la categoría "Ecuaciones Diferenciales Ordinarias"
+* Inclusión de las variantes:
+
+  * Euler Modificado (Punto Medio)
+  * Heun
+  * Ralston
+* Selección dinámica del tipo de Runge-Kutta mediante menú desplegable
+* Entrada opcional para solución analítica (y(x))
+* Comparación automática entre solución numérica y solución analítica
+* Cálculo de aproximaciones utilizando coeficientes ponderados (k_1) y (k_2)
+* Generación automática de nodos numéricos durante la integración
+* Visualización gráfica de la solución aproximada obtenida mediante Runge-Kutta
+* Visualización simultánea de la curva analítica cuando es proporcionada por el usuario
+* Representación gráfica de los puntos analíticos correspondientes a cada iteración
+* Cálculo automático del error utilizando el tipo de error seleccionado en la interfaz
+* Generación de gráfica de evolución del error durante el proceso iterativo
+* Compatibilidad con funciones algebraicas, trigonométricas, exponenciales y logarítmicas
+
+### Mejoras
+
+* Expansión del módulo de Ecuaciones Diferenciales Ordinarias incorporando métodos de mayor precisión que Euler
+* Reutilización de la arquitectura matemática desarrollada para EDOs
+* Optimización del sistema de evaluación de funciones para trabajar simultáneamente con soluciones numéricas y analíticas
+* Adaptación de la interfaz para soportar múltiples variantes de Runge-Kutta desde un único módulo
+* Mejora en la visualización de resultados mediante comparación gráfica directa entre aproximación y solución real
+* Integración completa con el sistema de errores dinámicos de la aplicación
+* Optimización de la generación de gráficas para mostrar simultáneamente comportamiento de la solución y evolución del error
+* Consolidación de la arquitectura modular para futuras implementaciones de métodos de orden superior
+
+### Pruebas
+
+* Pruebas manuales utilizando las variantes Euler Modificado, Heun y Ralston
+* Validación de resultados mediante comparación con soluciones analíticas conocidas
+* Verificación del cálculo correcto de los coeficientes ponderados de Runge-Kutta
+* Comparación de precisión entre Euler, Heun y Ralston
+* Validación del cálculo de Error Absoluto
+* Validación del cálculo de Error Relativo
+* Validación del cálculo de Error Porcentual
+* Verificación de generación correcta de gráficas numéricas y analíticas
+* Pruebas de estabilidad utilizando diferentes tamaños de paso e iteraciones
+* Validación de compatibilidad con el resto de métodos implementados en la Suite de Métodos Numéricos
+
+---
