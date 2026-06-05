@@ -14,7 +14,7 @@ Todos los cambios importantes realizados en el repositorio del proyecto
   * Scripts
   * Src
   * Tests
-  * Autor: Víctor Aguilar Ortiz - Victor4guilar
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ### Documentación
 
@@ -36,13 +36,13 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
 * Redacción del archivo AUTHORS.md.
 
-  * Autor: Víctor Aguilar Ortiz - Victor4guilar
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ### Código
 
 * Incorporación del archivo correspondiente al Método de Bisección dentro de la estructura del proyecto.
 
-  * Autor: Víctor Aguilar Ortiz - vic02julio-stack
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ---
 
@@ -62,7 +62,7 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
 * Incorporación de fotografías correspondientes a la versión v1.0.0 de la interfaz dentro de la carpeta Docs.
 
-  * Autor: Víctor Aguilar Ortiz - vic02julio-stack
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ### Código
 
@@ -88,7 +88,7 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
 * Se actualiza la interfaz a la v1.2.0, en la que se agrega el método de Newton-Raphson
 
-  * Autor: Víctor Aguilar Ortiz - Victor4guilar
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ---
 
@@ -128,7 +128,7 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
 * Se actualiza la interfaz a la v1.6.0, en la que se agrega el método de Mínimos Cuadrados Lineales
 
-  * Autor: Víctor Aguilar Ortiz - Victor4guilar
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ---
 
@@ -154,7 +154,7 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
 * Reorganización de la carpeta Docs mediante la creación de directorios independientes para almacenar las evidencias visuales de las versiones v1.0.0 a v1.8.0 de la interfaz.
 
-  * Autor: Víctor Aguilar Ortiz - vic02julio-stack
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ### Código
 
@@ -180,7 +180,7 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
 * Se actualiza la interfaz a la v1.10.0, en la que se agrega el método de la Iterpolación de Lagrange
 
-  * Autor: Víctor Aguilar Ortiz - Victor4guilar
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 * Se actualiza la interfaz a la v1.11.0, en la que se agrega el método de Diferencias Finitas
 
@@ -240,7 +240,7 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
 * Se actualiza la interfaz a la v3.1.0, en la que se agrega el método de Euler
 
-  * Autor: Víctor Aguilar Ortiz - Victor4guilar
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ---
 
@@ -251,5 +251,35 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 * Se actualiza la interfaz a la v3.2.0, en la que se agrega el método de Runge-Kutta
 
   * Autor: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+---
+
+## v0.19.0 - 04-06-2026
+
+### Documentación
+
+* Se agrega documentación en la carpeta Hardware explicando la razón por la cual el proyecto no requirió componentes físicos ni dispositivos externos.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Se agrega documentación en la carpeta Scripts explicando la razón por la cual el proyecto no requirió scripts auxiliares de automatización.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Actualización del archivo README.md para reflejar el estado actual del proyecto y la versión v3.2.1 de la interfaz.
+
+  * Autor: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+### Recursos
+
+* Incorporación de las evidencias visuales correspondientes a las versiones v1.9.0 hasta v3.2.1 de la interfaz dentro de la carpeta Docs.
+
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
+
+### Código
+
+* Se actualiza la interfaz a la v3.2.1 corrigiendo errores de texto, redacción y consistencia en elementos visuales de la aplicación.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
 
 ---
