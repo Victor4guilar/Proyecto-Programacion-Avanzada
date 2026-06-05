@@ -6,7 +6,7 @@ Experiencia Educativa: Programación Avanzada
 
 Facilitador: José Alfonso Dominguez Chávez
 
-Fecha: 15 de Mayo del 2026 
+Fecha: 04 de junio del 2026 
 
 Semestre: 4to 
 
@@ -14,20 +14,20 @@ Descripción del proyecto: En este proyecto vamos a crear una interfaz en la cua
 
 Estado del Proyecto: 
 
-Versión actual: `v1. 8. 0`
+Versión actual: `v3. 2. 1`
 
 Avances técnicos:
 
-    -Estructura de la Interfaz: Se ha llevado a cabo la creación de una ventana principal segmentada en paneles de configuración lateral y zonas de trabajo interactivas con actualización de campos de entrada en tiempo real según el método seleccionado.
-
-    -Análisis de Funciones y Datos: Se ha posibilitado la interpretación de expresiones matemáticas elaboradas (como seno, coseno, logaritmo, exponencial, entre otros) a partir de texto, así como el procesamiento secuencial de arreglos numéricos discretos separados por comas.
+    -Estructura de la Interfaz: Se ha optimizado la ventana principal (`1200x800`) segmentada en paneles de configuración lateral y zonas de trabajo interactivas. Se incorporó con éxito un sistema de búsqueda predictiva por escritura con filtrado automático en tiempo real y la selección dinámica del tipo de error iterativo.
+    
+    -Análisis de Funciones y Datos: Se ha posibilitado la interpretación de expresiones matemáticas elaboradas (como seno, coseno, logaritmo, exponencial, entre otros) a partir de texto, así como el procesamiento secuencial de arreglos numéricos discretos separados por comas para los métodos de análisis de datos.
    
     -Métodos Incorporados:
 
-      --Raíces Cerradas: Bisección (con validación de cambio de signo), Falsa Posición y Búsqueda por Incrementos.
+      --Raíces de Ecuaciones: Bisección (con validación de cambio de signo), Falsa Posición, Búsqueda por Incrementos, Newton-Raphson, Secante y Punto Fijo.
       
-      --Raíces Abiertas: Newton-Raphson (con entrada para derivada), Secante y Punto Fijo.
+      --Ajuste e Interpolación: Mínimos Cuadrados Lineales, Mínimos Cuadrados Polinomiales, Interpolación Lineal de Newton, Polinomios de Interpolación de Newton e Interpolación de Lagrange.
 
-      --Ajuste de Curvas: Mínimos Cuadrados Lineales, Mínimos Cuadrados Polinomiales e Interpolación Lineal de Newton (con cálculo de diferencias divididas).
+      --Cálculo Numérico y EDO:Diferencias Finitas, Método de Trapecios, Método de Integración de Simpson (simple y múltiple / compuesta), Método de Euler y Método de Runge-Kutta (4to Orden). 
 
-      --Gráficas: Se realiza la generación automática de gráficos interactivos utilizando la biblioteca Matplotlib, mostrando curvas de caída del error iterativo, comportamiento de funciones o el trazado de rectas y curvas de ajuste polinomial junto a sus puntos muestreados e interpolados.
+      --Gráficas: Se realiza la generación automática de gráficos interactivos utilizando la biblioteca Matplotlib insertada de forma nativa dentro de los paneles de la interfaz, mostrando de manera integrada las curvas de caída del error elegido, el comportamiento de las funciones, los intervalos de raíces detectadas, o el trazado de rectas y curvas de ajuste junto a sus puntos muestreados. 
