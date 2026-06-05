@@ -676,3 +676,24 @@ Todos los cambios importantes realizados en la interfaz del proyecto
 * Validación de compatibilidad con el resto de métodos implementados en la Suite de Métodos Numéricos
 
 ---
+
+## v3.2.1 - 03-06-2026 - Jonathan Sánchez Pérez - Perez-png2
+
+### Corregido
+- Corrección de errores ortográficos y de redacción en diversos textos de la interfaz.
+- Ajuste de nombres y etiquetas mostradas al usuario para mantener consistencia entre los métodos implementados.
+- Corrección de mensajes informativos y descriptivos dentro de la aplicación.
+- Actualización de referencias textuales relacionadas con el método de Runge-Kutta.
+- Revisión general de la documentación interna del código (comentarios y descripciones de métodos).
+
+### Mejoras
+- Homogeneización de la nomenclatura utilizada en la interfaz gráfica.
+- Mejora de la claridad de los textos presentados al usuario.
+- Incremento de la consistencia visual y descriptiva de la Suite de Métodos Numéricos.
+
+### Pruebas
+- Verificación manual del correcto despliegue de textos en la interfaz.
+- Validación de carga y ejecución de los métodos disponibles tras las correcciones.
+- Comprobación de que los cambios realizados no afectaran la funcionalidad existente.
+
+---
