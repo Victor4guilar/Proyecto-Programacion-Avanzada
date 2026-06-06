@@ -283,3 +283,35 @@ Todos los cambios importantes realizados en el repositorio del proyecto
   * Autor: Jonathan Sánchez Pérez - Perez-png2
 
 ---
+
+## v0.20.0 - 05-06-2026
+
+### Recursos
+
+* Reorganización de la carpeta Tests para almacenar evidencias de validación de cada método numérico.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
+
+* Creación de carpetas individuales para cada método implementado dentro de la Suite de Métodos Numéricos.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
+
+* Incorporación de evidencias fotográficas de las pruebas realizadas para cada método.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
+
+* Inclusión de capturas de resultados utilizando distintos tipos de error:
+
+  * Error Absoluto.
+
+  * Error Relativo.
+
+  * Error Porcentual.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
+
+* Organización de las evidencias experimentales para facilitar la trazabilidad, validación y comparación de resultados obtenidos por la aplicación.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
+
+---
