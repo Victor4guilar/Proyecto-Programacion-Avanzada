@@ -697,3 +697,38 @@ Todos los cambios importantes realizados en la interfaz del proyecto
 - Comprobación de que los cambios realizados no afectaran la funcionalidad existente.
 
 ---
+
+## v3.3.0 - 06-06-2026 - Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Agregado
+- Incorporación de un nuevo campo opcional para ingresar la solución analítica \(y(x)\) dentro del módulo del Método de Euler.
+- Comparación automática entre la aproximación numérica obtenida mediante Euler y la solución analítica proporcionada por el usuario.
+- Implementación de un sistema de visualización mediante doble panel (subplots) para mostrar simultáneamente:
+  - La solución numérica aproximada frente a la curva analítica.
+  - La evolución del error durante las iteraciones.
+- Generación automática de la curva analítica para fines de comparación gráfica cuando se proporciona una solución exacta.
+
+### Mejoras
+- Actualización de la lógica interna del Método de Euler para calcular automáticamente el error de cada iteración según el tipo seleccionado en la interfaz:
+  - Error Absoluto.
+  - Error Relativo.
+  - Error Porcentual.
+- Optimización del sistema gráfico reutilizando la arquitectura implementada previamente en Runge-Kutta.
+- Reorganización del formulario de entrada del Método de Euler para incorporar nuevos parámetros sin afectar la distribución visual existente.
+- Reajuste de posiciones y filas de los controles dinámicos (\(x_0\), \(y_0\), \(x_f\), \(n\)) para mejorar la presentación de la interfaz.
+- Mejora en el análisis visual de resultados permitiendo observar simultáneamente precisión y comportamiento del error.
+
+### Corregido
+- Eliminación de un prefijo de cadena de formato (f-string) innecesario detectado por Pyflakes (E), evitando advertencias de sintaxis durante el análisis estático del código.
+
+### Pruebas
+- Validación de comparación entre solución numérica y solución analítica utilizando ecuaciones diferenciales con solución conocida.
+- Verificación del cálculo correcto de Error Absoluto.
+- Verificación del cálculo correcto de Error Relativo.
+- Verificación del cálculo correcto de Error Porcentual.
+- Comprobación de generación simultánea de gráficas de solución y evolución del error.
+- Validación del comportamiento del nuevo campo opcional de solución analítica.
+- Pruebas de estabilidad utilizando diferentes tamaños de paso y cantidades de iteraciones.
+- Verificación de compatibilidad entre el Método de Euler actualizado y el resto de módulos de Ecuaciones Diferenciales Ordinarias.
+
+---

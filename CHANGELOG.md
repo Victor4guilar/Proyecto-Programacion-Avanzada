@@ -315,3 +315,37 @@ Todos los cambios importantes realizados en el repositorio del proyecto
   * Autor: Jonathan Sánchez Pérez - Perez-png2
 
 ---
+
+## v0.21.0 - 06-06-2026
+
+### Documentación
+
+* Incorporación de un documento de referencia dentro de la carpeta Results que recopila ejercicios de ejemplo para los distintos métodos numéricos implementados en la aplicación.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Inclusión de ejemplos de entrada y salida para facilitar el uso, validación y demostración de funcionalidades de la Suite de Métodos Numéricos.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Recursos
+
+* Incorporación de evidencias visuales asociadas a los ejercicios de ejemplo almacenados en la carpeta Results.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Inclusión de capturas de pantalla mostrando la configuración de entrada y los resultados obtenidos en la interfaz para cada ejercicio documentado.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Organización de material de apoyo para facilitar pruebas, demostraciones y futuras validaciones del software.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Código
+
+* Se actualiza la interfaz a la versión v3.3.0. en la que se incorporo un soporte para solución analítica opcional dentro del Método de Euler, junto a una comparación gráfica entre solución numérica y solución analítica en el Método de Euler. Con la incorporación de un sistema de doble gráfica para visualizar simultáneamente la aproximación obtenida y la evolución del error.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+---
