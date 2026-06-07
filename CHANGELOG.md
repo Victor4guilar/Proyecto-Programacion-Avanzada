@@ -328,6 +328,10 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
   * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
 
+* Actualización del archivo README.md para reflejar el estado actual del proyecto y la versión v3.3.0 de la interfaz.
+
+  * Autor: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
 ### Recursos
 
 * Incorporación de evidencias visuales asociadas a los ejercicios de ejemplo almacenados en la carpeta Results.
