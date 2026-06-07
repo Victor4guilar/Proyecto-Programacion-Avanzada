@@ -14,7 +14,7 @@ Descripción del proyecto: En este proyecto vamos a crear una interfaz en la cua
 
 Estado del Proyecto: 
 
-Versión actual: `v3. 2. 1`
+Versión actual: `v3. 3. 0`
 
 Avances técnicos:
 
