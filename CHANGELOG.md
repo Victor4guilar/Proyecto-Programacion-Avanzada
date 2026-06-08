@@ -371,4 +371,8 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
   * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
+* Incorporación de evidencias fotográficas de las pruebas realizadas para cada método de la v3.3.0, junto consus respectivaz carpetas en la carperta de test.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
+
 ---
