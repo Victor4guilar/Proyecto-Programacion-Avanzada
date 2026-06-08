@@ -276,6 +276,14 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 
   * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
+* Reorganización de la carpeta Docs mediante la creación de directorios independientes para cada versión documentada de la interfaz.
+
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
+
+* Mejora de la organización y trazabilidad de las evidencias visuales del proyecto mediante una estructura de almacenamiento por versiones.
+
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
+
 ### Código
 
 * Se actualiza la interfaz a la v3.2.1 corrigiendo errores de texto, redacción y consistencia en elementos visuales de la aplicación.
@@ -351,5 +359,16 @@ Todos los cambios importantes realizados en el repositorio del proyecto
 * Se actualiza la interfaz a la versión v3.3.0. en la que se incorporo un soporte para solución analítica opcional dentro del Método de Euler, junto a una comparación gráfica entre solución numérica y solución analítica en el Método de Euler. Con la incorporación de un sistema de doble gráfica para visualizar simultáneamente la aproximación obtenida y la evolución del error.
 
   * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+---
+
+## v0.22.0 - 07-06-2026
+
+### Recursos
+
+
+* Incorporación de las evidencias visuales correspondientes a la versión v3.3.0 de la interfaz dentro de la carpeta Docs.
+
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
 
 ---
