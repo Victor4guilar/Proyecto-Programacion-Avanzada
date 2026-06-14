@@ -376,3 +376,35 @@ Todos los cambios importantes realizados en el repositorio del proyecto
   * Autor: Jonathan Sánchez Pérez - Perez-png2
 
 ---
+
+## v0.23.0 - 13-06-2026
+
+### Documentación
+
+* Corrección del archivo RESULTS.md ubicado en la carpeta Results para evitar conflictos de formato Markdown provocados por el uso del carácter `*` dentro de expresiones matemáticas y funciones.
+
+  * Se encapsularon las funciones y expresiones mediante acentos graves (` `), preservando correctamente su visualización dentro del documento.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Recursos
+
+* Creación de la carpeta Presentation destinada al almacenamiento del material audiovisual de presentación del proyecto.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Creación de la subcarpeta Scripts dentro de Presentation para almacenar los guiones utilizados durante la elaboración de los videos de presentación.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Incorporación del archivo Axel.md dentro de la carpeta Presentation/Scripts, correspondiente al guion individual utilizado para la presentación de las contribuciones realizadas al proyecto.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Organización
+
+* Preparación de la estructura del repositorio para la futura incorporación de los videos finales de presentación del proyecto.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+---
