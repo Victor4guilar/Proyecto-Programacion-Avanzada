@@ -22,6 +22,7 @@ Implementación de nuevos métodos, organización de la interfaz y mejoras final
 - Ejemplo del método de Búsqueda por Incrementos en la interfaz.
 - Ejemplo del método de Falsa Posición en la interfaz.
 - Categorías del menú.
+- Captura de la interfaz.
 - Gráficas de error.
 
 ### Dificultad encontrada
