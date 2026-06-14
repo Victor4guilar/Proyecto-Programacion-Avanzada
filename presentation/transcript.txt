@@ -1,0 +1,115 @@
+INTERFAZ DE MÉTODOS NUMÉRICOS v3.3.0
+
+TRANSCRIPCIÓN DEL VIDEO
+
+========================
+INTRODUCCIÓN
+========================
+
+Bueno, vamos a presentar el proyecto de la interfaz de métodos numéricos, la versión 3.3.0. Contamos con los siguientes integrantes, que son Víctor, Gabriel, Axel de Jesús y Jonathan. Como objetivo, tenemos que dasarrollar una herramienta interactiva para facilitar el aprendizaje, aplicación y visulaización de métodos numéricos.
+
+========================
+JONATHAN SÁNCHEZ PÉREZ
+========================
+
+Mi rol principal dentro del proyecto fue desarrollar la estructura inicial de la aplicación y varios de los primeros métodos numéricos implementados. Entre ellos se encuentran el método de Bisección, el método de Punto Fijo, Mínimos Cuadrados Polinomiales y el del Trapecio. Además, colaboré en el desarrollo de funcionalidades generales de la interfaz, como el sistema de búsqueda de métodos y el manejo de distintos tipos de error.
+
+Mientras hablo, se puede observar parte del código correspondiente al método de Bisección. Este método permite encontrar raíces de ecuaciones mediante la reducción progresiva de un intervalo. También se muestran algunas secciones de la interfaz gráfica desarrollada para facilitar la interacción con el usuario.
+
+Durante el desarrollo realicé diversas pruebas utilizando funciones matemáticas conocidas para verificar la precisión de los resultados. Estas pruebas permitieron comprobar que los métodos convergían correctamente y que la interfaz mostraba la información de manera clara y organizada.
+
+Una de las principales dificultades fue diseñar una estructura suficientemente flexible para soportar distintos métodos numéricos sin tener que rehacer la interfaz para cada uno de ellos. Para resolver este problema se implementó una arquitectura modular que facilitó la incorporación de nuevas funcionalidades a lo largo del proyecto.
+
+Como recomendación, considero que es importante dedicar tiempo al diseño inicial de la estructura del software antes de comenzar a programar. Una buena planificación permite mantener el código organizado y facilita el trabajo colaborativo cuando el proyecto crece.
+
+Muchas gracias. Mé gustaria dar un ejemplo del método de bisección; como se puede ver en la pantalla. El genera una gráfica que muestra el error relativo con el numero de iteracciones versus el número del error, perdón. Y también me gustaría mostrar un ejemplo del punto fijo que básicamente lo que hace es pedir los datos y a partir de ellos generar una gráfica similar a esta con el número de errores relativo versus el error de iteracciones.
+
+Por último, me gustaria dar mostrar la interfaz, la estructura que yo creé fue con la importación de librerias, la clase principal del programa, creación de la interfaz gráfica, configuración de barra de datos, evaluación dinámica de función de matemética, implementación de métodos numéricos y división, perdón, y cargada dinámica de métodos, ejecución de métodos seleccionados, programa principal main, inicialización de la aplicaciín y ejecución del ciclo principal de la interfaz gráfica.
+
+Y a continuación, mi compañero Víctor continuara.
+
+========================
+VÍCTOR AGUILAR ORTIZ
+========================
+
+Hola, mi nombre es Víctor Aguilar Ortiz y participé en el desarrollo de la Interfaz de Métodos Numéricos versión 3.
+
+Mi principal contribución consistió en la implementación de varios métodos numéricos, entre ellos Newton-Raphson, Euler, Mínimos Cuadrados Lineales e Interpolación de Lagrange.
+
+En pantalla se muestran fragmentos del código correspondiente al de Newton-Raphson. Aquí se puede observar, aquí están las funciones que necesito o las variables para funcionar y aquí se ve como; aquí realiza el método, el código. Este método permite aproximar raíces de ecuaciones utilizando derivadas y normalmente converge con rapidez cuando se proporciona una buena aproximación inicial.
+
+También trabajé en la implementación del método de Euler para la solución aproximada de ecuaciones diferenciales ordinarias. Este método fue posteriormente ampliado y mejorado durante las últimas versiones del proyecto.
+
+Para verificar el correcto funcionamiento de los algoritmos realicé pruebas utilizando ejercicios de referencia y comparando los resultados obtenidos con soluciones conocidas. Además, se generaron gráficas que permitieron visualizar el comportamiento de los métodos y evaluar su precisión.
+
+Uno de los desafíos más importantes fue el manejo de funciones ingresadas por el usuario, ya que podían presentarse errores de sintaxis o expresiones inválidas. Para solucionar este problema se implementaron validaciones y se realizaron múltiples pruebas con diferentes casos de uso.
+
+La principal lección que obtuve de este proyecto es que siempre es importante validar los resultados numéricos utilizando ejemplos conocidos antes de integrar una nueva funcionalidad al sistema. Esto ayuda a detectar errores desde etapas tempranas del desarrollo.
+
+A continuación veremos un ejemplo en la interfaz para el método de Euler. Elejimos el método, lo cargamos y ahora damos la información, damos la solución analítica, la derivada, valores de x0, de y0 y xf y el número de iteraciones y lo ejecutamos.
+
+Y pues ya nos da el resultado, nos da el valor proximado, el valor real analítico y el error relativo final, y pues se pueden ver las gárficas. Una es de aproximación contra el valor real y otra del error.
+
+A continuación, vamos con mi compañero Gabriel, que seguirá explicando.
+
+========================
+GABRIEL BELTRÁN AMEZCUA
+========================
+
+Hola, mi nombre es Gabriel Beltrán Amezcua y participé en el desarrollo de la Interfaz de Métodos Numéricos versión 3.3.0.
+
+Mi rol principal fue implementar diversos métodos numéricos relacionados con aproximaciones y ecuaciones diferenciales. Entre ellos se encuentran el método de la Secante, Diferencias Finitas, Interpolación Lineal de Newton y el método de Runge-Kutta.
+
+En pantalla se muestran algunos fragmentos del código desarrollado para el método de Runge-Kutta, uno de los algoritmos más utilizados para resolver ecuaciones diferenciales debido a su mayor precisión respecto a métodos más simples como Euler.
+
+Durante el desarrollo se realizaron pruebas comparando diferentes métodos para observar sus niveles de precisión y comportamiento. Estas pruebas permitieron verificar que los resultados obtenidos eran consistentes y que las gráficas representaban adecuadamente las aproximaciones calculadas.
+
+Una de las dificultades encontradas fue gestionar la gran variedad de parámetros que requieren algunos métodos numéricos. Para resolver este problema se mejoró la organización de los formularios y se incorporaron validaciones que ayudan a reducir errores durante la captura de datos.
+
+La principal lección aprendida fue que una interfaz clara e intuitiva puede ser tan importante como el algoritmo matemático en sí. Una buena experiencia de usuario facilita el aprendizaje y reduce significativamente los errores de operación.
+
+Muchas gracias y ahora vamos a pasar con un método que es el de la secante. Este como aquí podemos ver ya tenemos la función puesta, la función x0 y x1 y la tolerancia. Ahora tenemos la raíz encontrada que es 6.65 y más, el error final que es el relativo 2.10 y más y las iteraciones que son 4.
+
+Ahora en la gráfica podemos ver el error relativo y esto se basa en la magnitud del error y el número de iteraciones como son 4 y de 10 podemos ver la forma de la gráfica. 
+
+Muchas gracias y ahora vamos con mi compañero Axel.
+
+========================
+AXEL DE JESÚS RONZÓN PÉREZ
+========================
+
+Hola, mi nombre es Axel de Jesús Ronzón Pérez y participé en el desarrollo de la Interfaz de Métodos Numéricos versión 3.3.0. Mi rol fue la implementación de nuevos métodos, organización de la interfaz y mejoras finales.
+
+Mi contribución principal consistió en la implementación de varios métodos numéricos y en la incorporación de mejoras importantes para la organización y usabilidad de la aplicación. Entre los métodos desarrollados se encuentran Falsa Posición, Búsqueda por Incrementos, Polinomios de Interpolación de Newton y el método de Simpson para integración numérica.
+
+Además, participé en la reorganización visual de la interfaz mediante la clasificación de los métodos por categorías, mejorando la navegación y facilitando que los usuarios encuentren rápidamente el método que desean utilizar.
+
+En pantalla se muestran fragmentos a partir de la línea 482 métodos donde se cargarán estos métodos de la falsa posición, búsqueda por incrementos, polinomios de interpolación de Newton y el método de simpson, en el cual se encontrarán todas las formulas y datos necesarions para realizar todos estos cálculos.
+
+Llegando después a la parte de cargar métodos en la línea 1687 donde se encontrarán todos estos apartados para crear en la intyerfaz todos los espacios para poner los datos de este problema o ejercicio que se quiera realizar.
+
+Habrá una parte después en la línea 2600 llamada tolerancia en donde estarán los métodos de búsqueda por incrementos y polinomios de interpolación de Newton, ya que estos dos no requieren de una función f(x) para funcionar.
+
+Ya después seguira la parte de ejecución, donde se cargará todos los resultados de estas fórmulas y datos recolectados anteriormente para realizar las gráficas, datos del error como de la función.
+
+A continuación dare un ejemplo de la falsa posicón en la interfaz, como verán, ahí se dan los datos de las ra+ices encontradas y los errores utilkizados, para la gráfica del error relativo que fue elegido en este ejercicio.
+
+Ahora daremos un ejemplo de la búsqueda por incrementos; aquí se crearán los datos de las raíces que sobresalen en esta gráfica de los datos realizados.
+
+Y bueno, dentro de la versión final 3.3.0 colaboré en las mejoras realizadas al método de Euler, incorporando la posibilidad de comparar la solución numérica con una solución analítica cuando ésta se encuentra disponible. Esto permitió calcular errores absolutos, relativos y porcentuales, además de generar gráficas comparativas y visualizar la evolución del error.
+
+Una de las principales dificultades fue integrar nuevas funcionalidades sin afectar la estabilidad de las versiones anteriores. Para resolverlo se mantuvo una organización modular del código y se realizaron pruebas constantes después de cada modificación.
+
+Como lección aprendida, considero que la documentación, la organización del código y el uso adecuado de herramientas de control de versiones son fundamentales para desarrollar proyectos colaborativos de manera eficiente.
+
+Muchísimas gracias.
+
+========================
+CIERRE
+========================
+
+Con esto concluimos este proyecto, el cual se implementaron 16 métodos numéricos en total, desarrollando una interfaz gráfica intuitiva, integrando gráficas y análisis de errores favorecientes, y el cual este proyecto nos fortaleció en el trabajo colaviorativo en el GitHub y GitHub Desktop, al igual que el uso del programa de Spider y Visual Studio Code para la documentación y el avance de este proyecto.
+
+Agradecemos al profe Alfonso por habernos enseñado todos estos programas y estas habilidades, al igual que la maestra Silvia por habernos mostrado cada uno de estos métodos.
+
+Sin más molestables, muchícimas gracias. Hasta luego.
