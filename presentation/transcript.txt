@@ -6,7 +6,7 @@ TRANSCRIPCIÓN DEL VIDEO
 INTRODUCCIÓN
 ========================
 
-Bueno, vamos a presentar el proyecto de la interfaz de métodos numéricos, la versión 3.3.0. Contamos con los siguientes integrantes, que son Víctor, Gabriel, Axel de Jesús y Jonathan. Como objetivo, tenemos que dasarrollar una herramienta interactiva para facilitar el aprendizaje, aplicación y visulaización de métodos numéricos.
+Bueno, vamos a presentar el proyecto de la interfaz de métodos numéricos, la versión 3.3.0. Contamos con los siguientes integrantes, que son Víctor, Gabriel, Axel de Jesús y Jonathan. Como objetivo, tenemos que desarrollar una herramienta interactiva para facilitar el aprendizaje, aplicación y visualización de métodos numéricos.
 
 ========================
 JONATHAN SÁNCHEZ PÉREZ
@@ -22,9 +22,9 @@ Una de las principales dificultades fue diseñar una estructura suficientemente 
 
 Como recomendación, considero que es importante dedicar tiempo al diseño inicial de la estructura del software antes de comenzar a programar. Una buena planificación permite mantener el código organizado y facilita el trabajo colaborativo cuando el proyecto crece.
 
-Muchas gracias. Mé gustaria dar un ejemplo del método de bisección; como se puede ver en la pantalla. El genera una gráfica que muestra el error relativo con el numero de iteracciones versus el número del error, perdón. Y también me gustaría mostrar un ejemplo del punto fijo que básicamente lo que hace es pedir los datos y a partir de ellos generar una gráfica similar a esta con el número de errores relativo versus el error de iteracciones.
+Muchas gracias. Me gustaría dar un ejemplo del método de bisección; como se puede ver en la pantalla. El genera una gráfica que muestra el error relativo con el numero de iteraciones versus el número del error, perdón. Y también me gustaría mostrar un ejemplo del punto fijo que básicamente lo que hace es pedir los datos y a partir de ellos generar una gráfica similar a esta con el número de errores relativo versus el error de iteraciones.
 
-Por último, me gustaria dar mostrar la interfaz, la estructura que yo creé fue con la importación de librerias, la clase principal del programa, creación de la interfaz gráfica, configuración de barra de datos, evaluación dinámica de función de matemética, implementación de métodos numéricos y división, perdón, y cargada dinámica de métodos, ejecución de métodos seleccionados, programa principal main, inicialización de la aplicaciín y ejecución del ciclo principal de la interfaz gráfica.
+Por último, me gustaría dar mostrar la interfaz, la estructura que yo creé fue con la importación de librerías, la clase principal del programa, creación de la interfaz gráfica, configuración de barra de datos, evaluación dinámica de función de matemática, implementación de métodos numéricos y división, perdón, y cargada dinámica de métodos, ejecución de métodos seleccionados, programa principal main, inicialización de la aplicación y ejecución del ciclo principal de la interfaz gráfica.
 
 Y a continuación, mi compañero Víctor continuara.
 
@@ -46,9 +46,9 @@ Uno de los desafíos más importantes fue el manejo de funciones ingresadas por 
 
 La principal lección que obtuve de este proyecto es que siempre es importante validar los resultados numéricos utilizando ejemplos conocidos antes de integrar una nueva funcionalidad al sistema. Esto ayuda a detectar errores desde etapas tempranas del desarrollo.
 
-A continuación veremos un ejemplo en la interfaz para el método de Euler. Elejimos el método, lo cargamos y ahora damos la información, damos la solución analítica, la derivada, valores de x0, de y0 y xf y el número de iteraciones y lo ejecutamos.
+A continuación veremos un ejemplo en la interfaz para el método de Euler. Elegimos el método, lo cargamos y ahora damos la información, damos la solución analítica, la derivada, valores de x0, de y0 y xf y el número de iteraciones y lo ejecutamos.
 
-Y pues ya nos da el resultado, nos da el valor proximado, el valor real analítico y el error relativo final, y pues se pueden ver las gárficas. Una es de aproximación contra el valor real y otra del error.
+Y pues ya nos da el resultado, nos da el valor aproximado, el valor real analítico y el error relativo final, y pues se pueden ver las gráficas. Una es de aproximación contra el valor real y otra del error.
 
 A continuación, vamos con mi compañero Gabriel, que seguirá explicando.
 
@@ -84,15 +84,15 @@ Mi contribución principal consistió en la implementación de varios métodos n
 
 Además, participé en la reorganización visual de la interfaz mediante la clasificación de los métodos por categorías, mejorando la navegación y facilitando que los usuarios encuentren rápidamente el método que desean utilizar.
 
-En pantalla se muestran fragmentos a partir de la línea 482 métodos donde se cargarán estos métodos de la falsa posición, búsqueda por incrementos, polinomios de interpolación de Newton y el método de simpson, en el cual se encontrarán todas las formulas y datos necesarions para realizar todos estos cálculos.
+En pantalla se muestran fragmentos a partir de la línea 482 métodos donde se cargarán estos métodos de la falsa posición, búsqueda por incrementos, polinomios de interpolación de Newton y el método de simpson, en el cual se encontrarán todas las formulas y datos necesarios para realizar todos estos cálculos.
 
-Llegando después a la parte de cargar métodos en la línea 1687 donde se encontrarán todos estos apartados para crear en la intyerfaz todos los espacios para poner los datos de este problema o ejercicio que se quiera realizar.
+Llegando después a la parte de cargar métodos en la línea 1687 donde se encontrarán todos estos apartados para crear en la interfaz todos los espacios para poner los datos de este problema o ejercicio que se quiera realizar.
 
 Habrá una parte después en la línea 2600 llamada tolerancia en donde estarán los métodos de búsqueda por incrementos y polinomios de interpolación de Newton, ya que estos dos no requieren de una función f(x) para funcionar.
 
-Ya después seguira la parte de ejecución, donde se cargará todos los resultados de estas fórmulas y datos recolectados anteriormente para realizar las gráficas, datos del error como de la función.
+Ya después seguirá la parte de ejecución, donde se cargará todos los resultados de estas fórmulas y datos recolectados anteriormente para realizar las gráficas, datos del error como de la función.
 
-A continuación dare un ejemplo de la falsa posicón en la interfaz, como verán, ahí se dan los datos de las ra+ices encontradas y los errores utilkizados, para la gráfica del error relativo que fue elegido en este ejercicio.
+A continuación daré un ejemplo de la falsa posición en la interfaz, como verán, ahí se dan los datos de las raíces encontradas y los errores utilizados, para la gráfica del error relativo que fue elegido en este ejercicio.
 
 Ahora daremos un ejemplo de la búsqueda por incrementos; aquí se crearán los datos de las raíces que sobresalen en esta gráfica de los datos realizados.
 
@@ -108,8 +108,8 @@ Muchísimas gracias.
 CIERRE
 ========================
 
-Con esto concluimos este proyecto, el cual se implementaron 16 métodos numéricos en total, desarrollando una interfaz gráfica intuitiva, integrando gráficas y análisis de errores favorecientes, y el cual este proyecto nos fortaleció en el trabajo colaviorativo en el GitHub y GitHub Desktop, al igual que el uso del programa de Spider y Visual Studio Code para la documentación y el avance de este proyecto.
+Con esto concluimos este proyecto, el cual se implementaron 16 métodos numéricos en total, desarrollando una interfaz gráfica intuitiva, integrando gráficas y análisis de errores fabo-recientes, y el cual este proyecto nos fortaleció en el trabajo colaborativo en el GitHub y GitHub Desktop, al igual que el uso del programa de Spider y Visual Studio Code para la documentación y el avance de este proyecto.
 
 Agradecemos al profe Alfonso por habernos enseñado todos estos programas y estas habilidades, al igual que la maestra Silvia por habernos mostrado cada uno de estos métodos.
 
-Sin más molestables, muchícimas gracias. Hasta luego.
+Sin más molestarles, muchísimas gracias. Hasta luego.
