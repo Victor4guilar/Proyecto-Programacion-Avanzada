@@ -466,3 +466,41 @@ Todos los cambios importantes realizados en el repositorio del proyecto
   * Autores: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08 y Axel de Jesús Ronzón Pérez - IAtevoy
 
 ---
+
+## v0.25.0 - 15-06-2026
+
+### Documentación
+
+* Incorporación del archivo Victor.md dentro de la carpeta Presentation/Scripts, correspondiente al guion individual utilizado para la presentación de las contribuciones realizadas al proyecto.
+
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
+
+* Incorporación del archivo Jonathan.md dentro de la carpeta Presentation/Scripts, correspondiente al guion individual utilizado para la presentación de las contribuciones realizadas al proyecto.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
+
+### Organización
+
+* Firma del documento consent.txt dentro de la carpeta Presentation por parte de Víctor Aguilar Ortiz, autorizando el uso de su imagen, voz y participación dentro del video final del proyecto.
+
+  * Autor: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack
+
+* Firma del documento consent.txt dentro de la carpeta Presentation por parte de Gabriel Beltrán Amezcua, autorizando el uso de su imagen, voz y participación dentro del video final del proyecto.
+
+  * Autor: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+* Firma del documento consent.txt dentro de la carpeta Presentation por parte de Jonathan Sánchez Pérez, autorizando el uso de su imagen, voz y participación dentro del video final del proyecto.
+
+  * Autor: Jonathan Sánchez Pérez - Perez-png2
+
+### Recursos Humanos
+
+* Incorporación de los guiones individuales faltantes para completar la documentación de participación de todos los integrantes dentro de la presentación final del proyecto.
+
+  * Autores: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack y Jonathan Sánchez Pérez - Perez-png2
+
+* Finalización del proceso de recopilación de consentimientos de los integrantes para el uso de imagen y voz dentro del material audiovisual entregado como evidencia final del proyecto.
+
+  * Autores: Víctor Aguilar Ortiz - Victor4guilar - vic02julio-stack, Gabriel Beltrán Amezcua - Th3PapaY0ch1S08 y Jonathan Sánchez Pérez - Perez-png2
+
+---
