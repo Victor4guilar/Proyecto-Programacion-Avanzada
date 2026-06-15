@@ -1,0 +1,41 @@
+INTERFAZ DE MÉTODOS NUMÉRICOS v3.3.0
+
+CONSENTIMIENTO DE PARTICIPACIÓN EN VIDEO
+
+Fecha: Junio de 2026
+
+Los integrantes abajo firmantes autorizan el uso de su imagen, voz y participación dentro del video correspondiente al proyecto "Interfaz de Métodos Numéricos v3.3.0", desarrollado para la experiencia educativa de Programación Avanzada.
+
+Asimismo, autorizan que dicho material audiovisual sea incluido dentro del repositorio del proyecto y utilizado exclusivamente con fines académicos como evidencia de evaluación y documentación del trabajo realizado.
+
+Integrantes:
+
+1. Jonathan Sánchez Pérez
+   Usuario de GitHub: Perez-png2
+
+   Autorizo mi participación en el video final del proyecto.
+
+   Firma: __________________________
+
+2. Víctor Aguilar Ortiz
+   Usuario de GitHub: Victor4guilar
+
+   Autorizo mi participación en el video final del proyecto.
+
+   Firma: __________________________
+
+3. Gabriel Beltrán Amezcua
+   Usuario de GitHub: Th3PapaY0ch1S08
+
+   Autorizo mi participación en el video final del proyecto.
+
+   Firma: __________________________
+
+4. Axel de Jesús Ronzón Pérez
+   Usuario de GitHub: IAtevoy
+
+   Autorizo mi participación en el video final del proyecto.
+
+   Firma: __Axel de Jesús Ronzón Pérez___
+
+Fin del documento.
