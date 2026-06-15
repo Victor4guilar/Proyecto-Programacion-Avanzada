@@ -408,3 +408,61 @@ Todos los cambios importantes realizados en el repositorio del proyecto
   * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
 
 ---
+
+## v0.24.0 - 14-06-2026
+
+### Documentación
+
+* Incorporación del archivo Gabriel.md dentro de la carpeta Presentation/Scripts, correspondiente al guion individual utilizado para la presentación de las contribuciones realizadas al proyecto.
+
+  * Autor: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+* Corrección de la sección "Evidencias mostradas durante la presentación" dentro del archivo Axel.md ubicado en Presentation/Scripts.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Creación del archivo transcript.txt dentro de la carpeta Presentation, el cual contiene la transcripción completa del contenido hablado durante la presentación final del proyecto.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Corrección ortográfica y revisión general del documento transcript.txt para mejorar la calidad de la transcripción.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Creación del archivo credits.md dentro de la carpeta Presentation, incluyendo integrantes, roles, tiempos de aparición y contribuciones principales del proyecto.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Creación del archivo consent.txt dentro de la carpeta Presentation para registrar la autorización de participación de los integrantes dentro del video final del proyecto.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Creación del archivo Videos.md dentro de la carpeta Presentation, incluyendo el enlace a la carpeta de OneDrive que almacena los videos finales de la presentación.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Recursos
+
+* Incorporación del archivo final_video.mp4 dentro de la carpeta Presentation, correspondiente a la grabación completa de la presentación del proyecto, incluyendo la explicación de la interfaz, el código desarrollado y ejemplos de funcionamiento de diversos métodos numéricos.
+
+  * Autor: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08
+
+* Incorporación del archivo thumbnail.jpeg dentro de la carpeta Presentation para utilizarse como miniatura representativa del material audiovisual del proyecto.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Inclusión de referencia al archivo final_video_subtitled.mp4 mediante enlace externo en OneDrive debido a limitaciones de tamaño para su almacenamiento dentro del repositorio.
+
+  * Autor: Axel de Jesús Ronzón Pérez - IAtevoy
+
+### Organización
+
+* Consolidación del material audiovisual correspondiente a la entrega final del proyecto dentro de la carpeta Presentation.
+
+  * Autores: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08 y Axel de Jesús Ronzón Pérez - IAtevoy
+
+* Incorporación de la documentación necesaria para cumplir con los requisitos de presentación, incluyendo guiones, transcripción, créditos, consentimiento y referencias a los videos finales.
+
+  * Autores: Gabriel Beltrán Amezcua - Th3PapaY0ch1S08 y Axel de Jesús Ronzón Pérez - IAtevoy
+
+---
